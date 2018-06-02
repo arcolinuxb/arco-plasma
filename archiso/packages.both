@@ -521,7 +521,7 @@ arcolinux-wallpapers-git
 #Calamares installer
 calamares
 boost-libs
-arcolinuxb-calamares-xfce-git
+arcolinuxb-calamares-plasma-git
 
 #Desktop specific
 plasma
