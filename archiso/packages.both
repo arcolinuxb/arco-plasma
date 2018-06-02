@@ -174,10 +174,10 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 mtpfs
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
+#thunar
+#thunar-archive-plugin
+#thunar-media-tags-plugin
+#thunar-volman
 udiskie
 udisks2
 xdg-user-dirs
@@ -219,9 +219,9 @@ atom
 catfish
 chromium
 #compton
-darktable
+#darktable
 dmenu
-evolution
+#evolution
 feh
 firefox
 #flashplugin
@@ -230,7 +230,7 @@ geany
 gimp
 gmrun
 gsimplecal
-guvcview
+#guvcview
 hardinfo
 imagemagick
 inkscape
@@ -309,7 +309,7 @@ bash-completion
 baobab
 catfish
 cmatrix
-cool-retro-term
+#cool-retro-term
 dconf-editor
 dialog
 dmidecode
@@ -320,7 +320,7 @@ git
 gksu
 glances
 gnome-disk-utility
-gnome-keyring
+#gnome-keyring
 gnome-screenshot
 #gnome-software
 #gnome-software-packagekit-plugin
@@ -380,7 +380,7 @@ wget
 wmctrl
 xapps
 xdg-desktop-portal-gtk
-xcape
+#xcape
 #xfburn
 zenity
 zsh-completions
@@ -390,7 +390,7 @@ zsh-syntax-highlighting
 gtk-xfce-engine
 xfce4
 #mousepad
-xfce4-goodies
+#xfce4-goodies
 
 #############################
 #arcolinux_repo_iso 3th party
@@ -450,12 +450,12 @@ glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
-menulibre
+#menulibre
 mintstick-git
-mugshot
+#mugshot
 neofetch
 oh-my-zsh-git
-oomox
+#oomox
 package-query
 packer
 pamac-aur
