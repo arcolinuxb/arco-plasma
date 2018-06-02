@@ -344,7 +344,7 @@ lsb-release
 mlocate
 nomacs
 p7zip
-plank
+#plank
 playerctl
 polkit
 polkit-gnome
@@ -502,8 +502,8 @@ arcolinux-nitrogen-git
 #arcolinux-openbox-configs-git
 #arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
-arcolinux-plank-git
-arcolinux-plank-themes-git
+#arcolinux-plank-git
+#arcolinux-plank-themes-git
 #arcolinux-polybar-git
 #arcolinux-rofi-git
 #arcolinux-rofi-themes-git
@@ -515,7 +515,7 @@ arcolinux-termite-themes-git
 #arcolinux-tint2-themes-git
 arcolinux-variety-git
 arcolinux-wallpapers-git
-#arcolinux-xfce-thunar-git
+arcolinux-xfce-thunar-git
 
 
 #Calamares installer
