@@ -344,7 +344,7 @@ lsb-release
 mlocate
 nomacs
 p7zip
-#plank
+plank
 playerctl
 polkit
 polkit-gnome
@@ -387,8 +387,8 @@ zsh-completions
 zsh-syntax-highlighting
 
 #xfce4
-gtk-xfce-engine
-xfce4
+#gtk-xfce-engine
+#xfce4
 #mousepad
 #xfce4-goodies
 
@@ -473,7 +473,7 @@ yad
 yaourt
 
 #xfce4
-xfpanel-switch
+#xfpanel-switch
 
 #############################
 #arcolinux_repo for arcolinux
@@ -502,8 +502,8 @@ arcolinux-nitrogen-git
 #arcolinux-openbox-configs-git
 #arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
-#arcolinux-plank-git
-#arcolinux-plank-themes-git
+arcolinux-plank-git
+arcolinux-plank-themes-git
 #arcolinux-polybar-git
 #arcolinux-rofi-git
 #arcolinux-rofi-themes-git
@@ -522,6 +522,12 @@ arcolinux-xfce-thunar-git
 calamares
 boost-libs
 arcolinuxb-calamares-plasma-git
+
+#xfce minimal desktop for iso
+xfce4-session
+xfdesktop
+xfwm4
+xfce4-panel
 
 #Desktop specific
 plasma
