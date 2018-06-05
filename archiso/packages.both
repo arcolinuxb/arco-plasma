@@ -53,7 +53,7 @@ rsync
 sdparm
 sg3_utils
 smartmontools
-speedtouch
+#speedtouch
 sudo
 tcpdump
 testdisk
