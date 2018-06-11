@@ -537,7 +537,6 @@ xfce4-panel
 #Desktop specific
 plasma
 kde-applications-meta
-breeze-kde4
 
 #extra personal
 thunar
