@@ -401,8 +401,8 @@ vivaldi
 vivaldi-codecs-ffmpeg-extra-bin
 
 #cursors
-breeze-cursors-lh
-breeze-obsidian-cursor-theme
+#breeze-cursors-lh
+#breeze-obsidian-cursor-theme
 #xcursor-breeze
 xcursor-vanilla-dmz-aa
 
@@ -537,6 +537,7 @@ xfce4-panel
 #Desktop specific
 plasma
 kde-applications-meta
+breeze-kde4
 
 #extra personal
 thunar
