@@ -193,7 +193,7 @@ gutenprint
 libcups
 hplip
 splix
-system-config-printer
+#system-config-printer
 
 #printer extra for hplip
 pyqt5-common
@@ -216,20 +216,20 @@ poppler-glib
 
 #applications
 atom
-catfish
+#catfish
 chromium
 #compton
 #darktable
-dmenu
+#dmenu
 #evolution
-feh
+#feh
 firefox
 #flashplugin
 galculator
 geany
 gimp
-gmrun
-gsimplecal
+#gmrun
+#gsimplecal
 #guvcview
 hardinfo
 imagemagick
@@ -275,7 +275,7 @@ ttf-ubuntu-font-family
 #i3blocks
 
 #icons
-arc-icon-theme
+#arc-icon-theme
 gnome-icon-theme
 
 #lightdm
@@ -299,8 +299,8 @@ lightdm
 #openbox
 
 #themes
-adapta-gtk-theme
-arc-gtk-theme
+#adapta-gtk-theme
+#arc-gtk-theme
 
 #utilities
 #arandr
@@ -308,7 +308,7 @@ asciinema
 bash-completion
 baobab
 catfish
-cmatrix
+#cmatrix
 #cool-retro-term
 dconf-editor
 dialog
@@ -319,20 +319,20 @@ file-roller
 git
 gksu
 glances
-gnome-disk-utility
+#gnome-disk-utility
 #gnome-keyring
-gnome-screenshot
+#gnome-screenshot
 #gnome-software
 #gnome-software-packagekit-plugin
 gparted
-gpick
+#gpick
 gtop
 hardinfo
 htop
-hunspell
-hunspell-en
-hyphen
-hyphen-en
+#hunspell
+#hunspell-en
+#hyphen
+#hyphen-en
 grsync
 intltool
 iw
@@ -345,9 +345,9 @@ mlocate
 nomacs
 p7zip
 plank
-playerctl
+#playerctl
 polkit
-polkit-gnome
+#polkit-gnome
 python2-dbus
 python2-xdg
 qt5ct
@@ -358,11 +358,11 @@ powertop
 reflector
 redshift
 ristretto
-rofi
+#rofi
 rsync
 rxvt-unicode
 simple-scan
-shotwell
+#shotwell
 speedtest-cli
 squashfs-tools
 timeshift
@@ -444,7 +444,7 @@ mkinitcpio-openswap
 aurvote-git
 conky-lua-archers
 downgrade
-font-manager
+#font-manager
 glxinfo
 #google-talkplugin
 grub-customizer
@@ -457,11 +457,11 @@ neofetch
 oh-my-zsh-git
 #oomox
 package-query
-packer
+#packer
 pamac-aur
 peek
 #pulseaudio-equalizer-ladspa
-python-pywal
+#python-pywal
 screenkey
 sublime-text-dev
 temps
@@ -537,6 +537,11 @@ xfce4-panel
 #Desktop specific
 plasma
 kde-applications-meta
+adapta-kde
+arc-kde
+kvantum-theme-adapta
+kvantum-theme-materia
+materia-kde
 
 #extra personal
 thunar
