@@ -253,7 +253,7 @@ jq
 lm_sensors
 
 #cursors
-xcursor-simpleandsoft
+#xcursor-simpleandsoft
 
 #fonts
 adobe-source-sans-pro-fonts
@@ -404,7 +404,7 @@ vivaldi-codecs-ffmpeg-extra-bin
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
 #xcursor-breeze
-xcursor-vanilla-dmz-aa
+#xcursor-vanilla-dmz-aa
 
 #fonts
 ttf-font-awesome
