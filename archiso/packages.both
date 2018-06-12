@@ -136,8 +136,8 @@ gstreamer
 libdvdcss
 pulseaudio
 pulseaudio-alsa
-pavucontrol
-volumeicon
+#pavucontrol
+#volumeicon
 
 #bluetooth
 blueberry
@@ -460,7 +460,7 @@ package-query
 packer
 pamac-aur
 peek
-pulseaudio-equalizer-ladspa
+#pulseaudio-equalizer-ladspa
 python-pywal
 screenkey
 sublime-text-dev
