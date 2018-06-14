@@ -196,10 +196,10 @@ splix
 #system-config-printer
 
 #printer extra for hplip
-pyqt5-common
+#pyqt5-common
 python-pillow
 python-pip
-python-pyqt5
+#python-pyqt5
 python-reportlab
 
 #tumbler
@@ -350,10 +350,10 @@ polkit
 #polkit-gnome
 python2-dbus
 python2-xdg
-qt5ct
-qt5-styleplugins
-qt5-tools
-qt5-webkit
+#qt5ct
+#qt5-styleplugins
+#qt5-tools
+#qt5-webkit
 powertop
 reflector
 redshift
@@ -379,7 +379,7 @@ webkit2gtk
 wget
 wmctrl
 xapps
-xdg-desktop-portal-gtk
+#xdg-desktop-portal-gtk
 #xcape
 #xfburn
 zenity
