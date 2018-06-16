@@ -300,7 +300,7 @@ lightdm
 
 #themes
 #adapta-gtk-theme
-#arc-gtk-theme
+arc-gtk-theme
 
 #utilities
 #arandr
