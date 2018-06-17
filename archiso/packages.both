@@ -357,7 +357,7 @@ python2-xdg
 powertop
 reflector
 redshift
-ristretto
+#ristretto
 #rofi
 rsync
 rxvt-unicode
