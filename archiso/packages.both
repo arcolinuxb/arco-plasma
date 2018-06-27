@@ -193,7 +193,7 @@ gutenprint
 libcups
 hplip
 splix
-#system-config-printer
+system-config-printer
 
 #printer extra for hplip
 #pyqt5-common
