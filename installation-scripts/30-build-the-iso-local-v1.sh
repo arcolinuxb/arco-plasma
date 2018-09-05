@@ -1,11 +1,12 @@
 #!/bin/bash
 #set -e
-#
 ##################################################################################################################
-# Written to be used on 64 bits computers
-# Author 	: 	Erik Dubois
-# ArcoLinux	: 	https://arcolinux.info/
-##################################################################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxforum.com
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
@@ -37,6 +38,10 @@ newname5='DISTRIB_ID=ArcoLinuxB-'$desktop
 
 oldname6='DISTRIB_DESCRIPTION="ArcoLinux"'
 newname6='DISTRIB_DESCRIPTION=ArcoLinuxB-'$desktop
+
+oldname7='ArcoLinux'
+newname7='ArcoLinuxB-'$desktop
+
 echo
 echo "################################################################## "
 echo "Phase 1 : clean up and download the latest ArcoLinux-iso from github"
@@ -78,6 +83,8 @@ sed -i 's/'$oldname3'/'$newname3'/g' ../work/archiso/airootfs/etc/os-release
 sed -i 's/'$oldname4'/'$newname4'/g' ../work/archiso/airootfs/etc/os-release
 sed -i 's/'$oldname5'/'$newname5'/g' ../work/archiso/airootfs/etc/lsb-release
 sed -i 's/'$oldname6'/'$newname6'/g' ../work/archiso/airootfs/etc/lsb-release
+sed -i 's/'$oldname7'/'$newname7'/g' ../work/archiso/airootfs/etc/hosts
+sed -i 's/'$oldname7'/'$newname7'/g' ../work/archiso/airootfs/etc/hostname
 
 echo
 echo "################################################################## "
@@ -94,26 +101,46 @@ package="archiso"
 #checking if application is already installed or else install with aur helpers
 if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
 
 else
 
 	#checking which helper is installed
-	if pacman -Qi yaourt &> /dev/null; then
+	if pacman -Qi yay &> /dev/null; then
 
-		echo "Installing with yaourt"
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
 		yaourt -S --noconfirm $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 
-		echo "Installing with pacaur"
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
 		pacaur -S --noconfirm --noedit  $package
 
 	elif pacman -Qi packer &> /dev/null; then
 
-		echo "Installing with packer"
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
 		packer -S --noconfirm --noedit  $package
 
 	fi
@@ -121,15 +148,15 @@ else
 	# Just checking if installation was successful
 	if pacman -Qi $package &> /dev/null; then
 
-	echo "################################################################"
-	echo "#########  "$package" has been installed"
-	echo "################################################################"
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
 
 	else
 
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!  "$package" has NOT been installed"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 	fi
 
@@ -146,15 +173,14 @@ cd ~/arcolinuxb-build/archiso
 
 
 echo "################################################################"
-read -p "In order to build an iso we need to clean your cache (y/n)?" choice
+echo "In order to build an iso we need to clean your cache"
+echo "################################################################"
 
-	case "$choice" in
- 	 y|Y ) sudo pacman -Scc;;
- 	 n|N ) echo "Script has stopped. Nothing changed." & exit;;
- 	 * ) echo "Type y or n." & echo "Script ended!" & exit;;
-	esac
+sudo pacman -Scc --noconfirm
 
-
-echo "Making the Iso"
+echo "################################################################"
+echo "Building the iso - Start"
+echo "################################################################"
+echo
 
 sudo ./build.sh -v
