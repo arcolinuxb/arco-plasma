@@ -184,3 +184,14 @@ echo "################################################################"
 echo
 
 sudo ./build.sh -v
+
+echo
+echo "################################################################## "
+echo "Phase 5 : Moving the iso to Documents"
+echo "################################################################## "
+echo
+
+[ -d ~/Documents/ArcoLinuxB ] || mkdir ~/Documents/ArcoLinuxB
+
+echo "moving iso to documents"
+cp ~/arcolinuxb-build/archiso/out/arcolinux* ~/Documents/ArcoLinuxB
