@@ -533,7 +533,6 @@ arcolinuxb-calamares-plasma-git
 #xfce minimal desktop for iso
 xfce4-session
 xfce4-settings
-
 xfdesktop
 xfwm4
 xfce4-panel
