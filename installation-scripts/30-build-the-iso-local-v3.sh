@@ -191,7 +191,5 @@ echo "Phase 5 : Moving the iso to Documents"
 echo "################################################################## "
 echo
 
-[ -d ~/Documents/ArcoLinuxB ] || mkdir ~/Documents/ArcoLinuxB
-
-echo "moving iso to documents"
-cp ~/arcolinuxb-build/archiso/out/arcolinux* ~/Documents/ArcoLinuxB
+[ -d  ~/ArcoLinuxB-Out ] || mkdir ~/ArcoLinuxB-Out
+cp ~/arcolinuxb-build/archiso/out/arcolinux* ~/ArcoLinuxB-Out
