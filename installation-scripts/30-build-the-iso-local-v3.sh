@@ -187,7 +187,7 @@ sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-echo "Phase 5 : Moving the iso to Documents"
+echo "Phase 5 : Moving the iso to ~/ArcoLinuxB-Out"
 echo "################################################################## "
 echo
 
