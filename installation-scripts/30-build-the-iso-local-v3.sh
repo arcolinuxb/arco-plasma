@@ -176,7 +176,7 @@ echo "################################################################"
 echo "In order to build an iso we need to clean your cache"
 echo "################################################################"
 
-sudo pacman -Scc --noconfirm
+yes | sudo pacman -Scc
 
 echo "################################################################"
 echo "Building the iso - Start"
