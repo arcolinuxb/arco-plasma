@@ -6,7 +6,7 @@
 
 # Follow installation tutorials on
 
-https://arcolinuxd.com
+https://arcolinuxb.com
 
 # Websites
 
