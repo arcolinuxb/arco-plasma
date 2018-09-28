@@ -168,6 +168,8 @@ echo "Copying files and folder to ~/arcolinuxb-build as root"
 sudo mkdir ~/arcolinuxb-build
 sudo cp -r ../work/* ~/arcolinuxb-build
 
+echo "Deleting the work folder if one exists - clean up"
+[ -d ../work ] && rm -rf ../work
 
 cd ~/arcolinuxb-build/archiso
 
