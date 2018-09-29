@@ -285,7 +285,7 @@ lightdm
 
 
 #lx-applications
-#lxappearance-gtk3
+#lxappearance-obconf
 #lxappearance-obconf-gtk3
 #lxrandr
 
