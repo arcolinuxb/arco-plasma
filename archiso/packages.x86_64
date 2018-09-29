@@ -78,6 +78,7 @@ xterm
 #video
 #xorg-drivers
 #xorg-drivers includes
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard
 xf86-input-libinput
@@ -87,7 +88,7 @@ xf86-input-vmmouse
 xf86-input-void
 xf86-video-amdgpu
 xf86-video-ati
-xf86-video-dummy
+#xf86-video-dummy
 xf86-video-fbdev
 xf86-video-intel
 #xf86-video-nouveau
@@ -95,16 +96,16 @@ xf86-video-openchrome
 #xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
-xf86-video-voodoo
-xf86-video-sisusb
+#xf86-video-voodoo
+#xf86-video-sisusb
 
 #hardware video support
 #bumblebee
-libva-intel-driver
-libva-vdpau-driver
+#libva-intel-driver
+#libva-vdpau-driver
 mesa
 #mesa-demos
-mesa-vdpau
+#mesa-vdpau
 #opencl-mesa
 #primus
 #vulkan-intel
@@ -183,6 +184,7 @@ xdg-user-dirs
 
 #printers
 cups
+cups-filters
 cups-pdf
 cups-pk-helper
 ghostscript
@@ -208,6 +210,7 @@ freetype2
 libgsf
 libopenraw
 poppler-glib
+poppler-qt5
 
 ###########################
 #Software from Arch repo's
@@ -219,6 +222,7 @@ atom
 chromium
 #compton
 #darktable
+#deadbeef
 #dmenu
 #evolution
 #feh
@@ -278,22 +282,18 @@ gnome-icon-theme
 #lightdm
 accountsservice
 lightdm
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
 
-#login manager
-#slim
 
 #lx-applications
-#lxappearance-obconf
-#lxmenu-data
+#lxappearance-gtk3
+#lxappearance-obconf-gtk3
 #lxrandr
 
 #openbox
 #gtk2-perl
 #obconf
-#oblogout
 #openbox
+#gtk-engine-murrine
 
 #themes
 #adapta-gtk-theme
@@ -335,7 +335,6 @@ grsync
 intltool
 iw
 jsoncpp
-kpmcore
 libmtp
 laptop-detect
 lsb-release
@@ -358,12 +357,10 @@ reflector
 redshift
 #ristretto
 #rofi
-rsync
 rxvt-unicode
 simple-scan
 #shotwell
 speedtest-cli
-squashfs-tools
 timeshift
 tlp
 #transmission-cli
@@ -378,19 +375,14 @@ webkit2gtk
 wget
 wmctrl
 xapps
-#xdg-desktop-portal-gtk
 #xcape
+#xdg-desktop-portal-gtk
 #xfburn
 zenity
 zsh
 zsh-completions
 zsh-syntax-highlighting
 
-#xfce4
-#gtk-xfce-engine
-#xfce4
-#mousepad
-#xfce4-goodies
 
 #############################
 #arcolinux_repo_iso 3th party
@@ -403,6 +395,7 @@ vivaldi-codecs-ffmpeg-extra-bin
 #cursors
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
+#oxy-neon
 #xcursor-breeze
 #xcursor-vanilla-dmz-aa
 
@@ -420,7 +413,6 @@ halo-icons-git
 numix-circle-arc-icons-git
 numix-icon-theme-git
 numix-circle-icon-theme-git
-#slow loading theme of cursors in settings plasma
 #paper-icon-theme
 #papirus-icon-theme-git
 sardi-icons
@@ -455,7 +447,6 @@ neofetch
 oh-my-zsh-git
 #oomox
 package-query
-#packer
 pamac-aur
 peek
 #pulseaudio-equalizer-ladspa
@@ -472,8 +463,16 @@ yad
 yay-bin
 yaourt
 
-#xfce4
-#xfpanel-switch
+#############################
+#Games
+#############################
+
+#steam
+#steam-native-runtime
+#lutris
+#sauerbraten
+#xonotic
+
 
 #############################
 #arcolinux_repo for arcolinux
@@ -486,6 +485,7 @@ arcolinux-bin-git
 #arcolinux-config-cinnamon-git
 #arcolinux-config-git
 #arcolinux-config-gnome-git
+#arcolinux-config-mate-git
 arcolinux-config-plasma-git
 arcolinux-conky-collection-git
 #arcolinux-docs-git
@@ -504,6 +504,7 @@ arcolinux-neofetch-git
 #arcolinux-oblogout-bspwm
 #arcolinux-oblogout-themes-git
 #arcolinux-obmenu-generator-git
+#arcolinux-obmenu-generator-minimal-git
 #arcolinux-openbox-configs-git
 #arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
@@ -520,20 +521,87 @@ arcolinux-termite-themes-git
 #arcolinux-tint2-themes-git
 arcolinux-variety-git
 arcolinux-wallpapers-git
+#arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
 
-
-#Calamares installer
-calamares
-boost-libs
-arcolinuxb-calamares-plasma-git
-
-#xfce minimal desktop for iso
+#xfce4 also for ArcoLinuxB iso builds
+#xfce4 group content
+#exo
+#garcon
+#gtk-xfce-engine
+#thunar
+#thunar-volman
+#tumbler
+#xfce4-appfinder
+xfce4-panel
+#xfce4-power-manager
 xfce4-session
 xfce4-settings
+#xfce4-terminal
+#xfconf
 xfdesktop
 xfwm4
-xfce4-panel
+#xfwm4-themes
+
+
+#xfce4-goodies group content
+#mousepad
+#orage
+#parole
+#ristretto
+#thunar-archive-plugin
+#thunar-media-tags-plugin
+#xfburn
+#xfce4-artwork
+#xfce4-battery-plugin
+#xfce4-clipman-plugin
+#xfce4-cpufreq-plugin
+#xfce4-cpugraph-plugin
+#xfce4-datetime-plugin
+#xfce4-dict
+#xfce4-diskperf-plugin
+#xfce4-eyes-plugin
+#xfce4-fsguard-plugin
+#xfce4-genmon-plugin
+#xfce4-mailwatch-plugin
+#xfce4-mount-plugin
+#xfce4-mpc-plugin
+#xfce4-netload-plugin
+#xfce4-notes-plugin
+#xfce4-notifyd
+#xfce4-pulseaudio-plugin
+#xfce4-screenshooter
+#xfce4-sensors-plugin
+#xfce4-smartbookmark-plugin
+#xfce4-systemload-plugin
+#xfce4-taskmanager
+#xfce4-time-out-plugin
+#xfce4-timer-plugin
+#xfce4-verve-plugin
+#xfce4-wavelan-plugin
+#xfce4-weather-plugin
+#xfce4-whiskermenu-plugin
+#xfce4-xkb-plugin
+
+#xfce4-panel-profiles
+
+#Needed for Calamares installer
+calamares
+networkmanager
+upower
+kcoreaddons
+kconfig
+ki18n
+kservice
+kwidgetsaddons
+kpmcore
+boost-libs
+libpwquality
+squashfs-tools
+plasma-framework
+hwinfo
+
+arcolinuxb-calamares-plasma-git
 
 #Desktop specific
 plasma
