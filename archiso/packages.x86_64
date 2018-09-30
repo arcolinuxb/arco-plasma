@@ -192,7 +192,7 @@ gsfonts
 gtk3-print-backends
 gutenprint
 libcups
-hplip
+#hplip
 splix
 system-config-printer
 
@@ -357,7 +357,6 @@ python2-xdg
 powertop
 reflector
 redshift
-#ristretto
 #rofi
 rxvt-unicode
 simple-scan
