@@ -588,6 +588,7 @@ xfwm4
 
 #Needed for Calamares installer
 calamares
+arcolinuxb-calamares-plasma-git
 ckbcomp
 networkmanager
 upower
@@ -603,7 +604,6 @@ squashfs-tools
 plasma-framework
 hwinfo
 
-arcolinuxb-calamares-plasma-git
 
 #Desktop specific
 plasma
@@ -615,3 +615,5 @@ kvantum-theme-materia
 materia-kde
 partitionmanager
 ktorrent
+kdeconnect
+
