@@ -339,7 +339,6 @@ jsoncpp
 libmtp
 laptop-detect
 lsb-release
-#lxrandr
 mlocate
 #nomacs
 p7zip
@@ -434,6 +433,7 @@ mkinitcpio-openswap
 aurvote-git
 conky-lua-archers
 downgrade
+expac
 #font-manager
 glxinfo
 #google-talkplugin
@@ -460,6 +460,7 @@ urxvt-resize-font-git
 wttr
 yad
 yay-bin
+youtube-dl
 
 #############################
 #Games
