@@ -152,7 +152,7 @@ pulseaudio-bluetooth
 
 #network
 avahi
-nss-mdns
+#nss-mdns
 mobile-broadband-provider-info
 modemmanager
 networkmanager
@@ -163,7 +163,7 @@ networkmanager-pptp
 networkmanager-vpnc
 networkmanager-dispatcher-ntpd
 openresolv
-samba
+#samba
 wpa_supplicant
 
 #file management
@@ -172,7 +172,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
-gvfs-smb
+#gvfs-smb
 mtpfs
 #thunar
 #thunar-archive-plugin
@@ -355,14 +355,14 @@ python2-xdg
 #qt5-webkit
 powertop
 reflector
-redshift
+#redshift
 #rofi
 rxvt-unicode
 simple-scan
 #shotwell
 speedtest-cli
 timeshift
-tlp
+#tlp
 #transmission-cli
 ufw
 gufw
@@ -418,6 +418,7 @@ numix-circle-icon-theme-git
 #papirus-icon-theme-git
 sardi-icons
 surfn-icons-git
+zafiro-icon-theme
 
 #network
 b43-firmware
@@ -517,6 +518,7 @@ arcolinux-plank-themes-git
 #arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
+arcolinux-system-config-git
 arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
@@ -588,6 +590,7 @@ xfwm4
 
 #Needed for Calamares installer
 calamares
+arcolinux-system-installation-git
 arcolinuxb-calamares-plasma-git
 ckbcomp
 networkmanager
