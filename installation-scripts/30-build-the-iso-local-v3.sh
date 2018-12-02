@@ -91,7 +91,6 @@ echo "################################################################## "
 echo "Phase 4 : Let us build the iso"
 echo "################################################################## "
 echo
-
 echo "Checking if archiso is installed"
 
 package="archiso"
@@ -167,6 +166,10 @@ fi
 echo "Copying files and folder to ~/arcolinuxb-build as root"
 sudo mkdir ~/arcolinuxb-build
 sudo cp -r ../work/* ~/arcolinuxb-build
+
+sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/sudoers.d
+sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
+sudo chgrp polkitd ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 
 echo "Deleting the work folder if one exists - clean up"
 [ -d ../work ] && rm -rf ../work
