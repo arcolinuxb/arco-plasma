@@ -606,6 +606,7 @@ libpwquality
 squashfs-tools
 plasma-framework
 hwinfo
+qt5-xmlpatterns
 
 
 #Desktop specific
