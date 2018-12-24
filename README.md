@@ -16,6 +16,8 @@ Tutorials about ArcoLinux iso (Xfce, Openbox and i3) : https://arcolinux.com
 
 Tutorials about ArcoLinuxD iso (any desktop) : https://arcolinuxd.com
 
+Tutorials how to build your own iso : https://arcolinuxb.com
+
 Forum : https://arcolinuxforum.com
 
 
@@ -36,3 +38,5 @@ Instagram: https://www.instagram.com/arcolinux/
 Linked in: https://www.linkedin.com/in/arcolinux
 
 Youtube  : https://www.youtube.com/erikdubois
+
+Discord : https://arcolinux.info/arcolinux-editions/
