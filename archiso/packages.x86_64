@@ -488,6 +488,7 @@ arcolinux-bin-git
 #arcolinux-config-gnome-git
 #arcolinux-config-mate-git
 arcolinux-config-plasma-git
+#arcolinux-config-xmonad-git
 arcolinux-conky-collection-git
 #arcolinux-docs-git
 #arcolinux-faces-git
@@ -506,6 +507,7 @@ arcolinux-mirrorlist-git
 #arcolinux-oblogout-awesome
 #arcolinux-oblogout-bspwm
 #arcolinux-oblogout-themes-git
+#arcolinux-oblogout-xmonad
 #arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
 #arcolinux-openbox-configs-git
@@ -527,6 +529,7 @@ arcolinux-variety-git
 arcolinux-wallpapers-git
 #arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
+#arcolinux-xmonad-git
 
 #xfce4 also for ArcoLinuxB iso builds
 #xfce4 group content
