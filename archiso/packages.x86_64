@@ -245,7 +245,6 @@ scrot
 simplescreenrecorder
 termite
 #tint2
-#transmission-gtk
 variety
 vlc
 
@@ -367,7 +366,6 @@ simple-scan
 speedtest-cli
 timeshift
 #tlp
-#transmission-cli
 ufw
 gufw
 unace
