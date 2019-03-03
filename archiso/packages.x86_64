@@ -492,6 +492,7 @@ arcolinux-bin-git
 #arcolinux-config-gnome-git
 #arcolinux-config-mate-git
 arcolinux-config-plasma-git
+#arcolinux-config-xmobar-git
 #arcolinux-config-xmonad-git
 arcolinux-conky-collection-git
 #arcolinux-docs-git
@@ -539,6 +540,7 @@ arcolinux-variety-git
 arcolinux-wallpapers-git
 #arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
+#arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-git
 
 #xfce4 also for ArcoLinuxB iso builds

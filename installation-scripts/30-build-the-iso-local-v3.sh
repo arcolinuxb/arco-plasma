@@ -70,7 +70,7 @@ echo "Removing old files/folders from /etc/skel"
 rm -rf ../work/archiso/airootfs/etc/skel/.* 2> /dev/null
 
 echo "getting .bashrc from arcolinux-root"
-wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/root/.bashrc-latest -O ../work/archiso/airootfs/etc/skel/.bashrc
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O ../work/archiso/airootfs/etc/skel/.bashrc
 
 echo
 echo "################################################################## "
