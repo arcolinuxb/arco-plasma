@@ -353,8 +353,8 @@ polkit
 python2-dbus
 python2-xdg
 #qt4
-qt5ct
-#qt5-styleplugins
+#qt5ct
+##qt5-styleplugins
 #qt5-tools
 #qt5-webkit
 powertop
