@@ -176,7 +176,7 @@ gvfs-smb
 mtpfs
 #thunar
 thunar-archive-plugin
-#thunar-media-tags-plugin
+thunar-media-tags-plugin
 #thunar-volman
 udiskie
 udisks2
@@ -565,7 +565,6 @@ xfwm4
 #orage
 #parole
 #ristretto
-#thunar-media-tags-plugin
 #xfburn
 #xfce4-artwork
 #xfce4-battery-plugin
