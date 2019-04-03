@@ -507,8 +507,8 @@ arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 #arcolinux-logo-git
-arcolinux-neofetch-git
 arcolinux-mirrorlist-git
+arcolinux-neofetch-git
 #arcolinux-nitrogen-git
 #arcolinux-oblogout
 #arcolinux-oblogout-awesome
@@ -525,6 +525,7 @@ arcolinux-plank-themes-git
 #arcolinux-polybar-git
 #arcolinux-qt5-git
 arcolinux-qt5-plasma-git
+#arcolinux-qtile-git
 #arcolinux-rofi-git
 #arcolinux-rofi-themes-git
 #arcolinux-root-git
