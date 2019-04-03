@@ -365,8 +365,8 @@ simple-scan
 #shotwell
 speedtest-cli
 timeshift
-the_platinum_searcher-bin
 #tlp
+tree
 ufw
 gufw
 unace
@@ -456,6 +456,7 @@ peek
 screenkey
 sublime-text-dev
 temps
+the_platinum_searcher-bin
 tmux
 trizen
 urxvt-perls
