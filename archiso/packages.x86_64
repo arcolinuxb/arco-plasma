@@ -174,7 +174,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 mtpfs
-#thunar
+thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
