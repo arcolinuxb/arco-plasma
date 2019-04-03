@@ -540,7 +540,7 @@ arcolinux-wallpapers-git
 #arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
 #arcolinux-xmonad-polybar-git
-#arcolinux-xmonad-git
+#arcolinux-xmonad-xmobar-git
 
 #xfce4 also for ArcoLinuxB iso builds
 #xfce4 group content
