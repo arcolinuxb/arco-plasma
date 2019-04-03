@@ -477,8 +477,8 @@ yay-bin
 
 #############################
 #arcolinux_repo for arcolinux
-#arcolinux-applications-git
-#arcolinux-arc-themes-git
+##arcolinux-applications-git
+arcolinux-arc-themes-git
 #arcolinux-awesome-git
 arcolinux-bin-git
 #arcolinux-bspwm-git
