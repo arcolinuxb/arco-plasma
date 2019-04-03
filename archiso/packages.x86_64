@@ -198,7 +198,7 @@ system-config-printer
 
 #printer extra for hplip
 #pyqt5-common
-python-pillow
+#python-pillow
 python-pip
 #python-pyqt5
 python-reportlab
