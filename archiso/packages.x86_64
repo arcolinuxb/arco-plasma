@@ -177,7 +177,7 @@ mtpfs
 #thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
-#thunar-volman
+thunar-volman
 udiskie
 udisks2
 xdg-user-dirs
