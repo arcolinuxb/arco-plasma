@@ -64,7 +64,7 @@ vim-minimal
 vpnc
 wget
 wireless_tools
-wpa_actiond
+#wpa_actiond
 wvdial
 xl2tpd
 
