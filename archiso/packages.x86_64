@@ -321,7 +321,7 @@ git
 gksu
 glances
 #gnome-disk-utility
-#gnome-keyring
+gnome-keyring
 #gnome-screenshot
 #gnome-software
 #gnome-software-packagekit-plugin
@@ -442,6 +442,7 @@ glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
+libappindicator-gtk3
 #menulibre
 mintstick-git
 #mugshot
