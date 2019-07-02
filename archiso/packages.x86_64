@@ -91,7 +91,7 @@ xf86-video-ati
 #xf86-video-dummy
 xf86-video-fbdev
 xf86-video-intel
-#xf86-video-nouveau
+xf86-video-nouveau
 xf86-video-openchrome
 #xf86-video-qxl
 xf86-video-vesa
@@ -506,6 +506,7 @@ arcolinux-keyring
 arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
+#arcolinux-local-repo-git
 #arcolinux-logo-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
