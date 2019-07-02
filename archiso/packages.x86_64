@@ -442,7 +442,7 @@ glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
-libappindicator-gtk3
+#libappindicator-gtk3
 #menulibre
 mintstick-git
 #mugshot
