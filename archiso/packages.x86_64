@@ -487,6 +487,7 @@ arcolinux-bin-git
 #arcolinux-config-deepin-git
 #arcolinux-config-git
 #arcolinux-config-gnome-git
+#arcolinux-config-lxqt-git
 #arcolinux-config-mate-git
 arcolinux-config-plasma-git
 #arcolinux-config-xmobar-git
@@ -507,6 +508,8 @@ arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 #arcolinux-local-repo-git
 #arcolinux-logo-git
+#arcolinux-lxqt-applications-add-git
+#arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 #arcolinux-nitrogen-git
