@@ -236,4 +236,4 @@ echo "Phase 8 : Making sure we start with a clean slate next time"
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d ~/arcolinux-build ] && sudo rm -rf ~/arcolinux-build
+[ -d ~/arcolinuxb-build ] && sudo rm -rf ~/arcolinuxb-build
