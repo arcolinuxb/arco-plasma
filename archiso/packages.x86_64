@@ -301,7 +301,6 @@ gtk-engine-murrine
 arc-gtk-theme
 #kvantum-qt5
 #kvantum-theme-arc
-#numix-gtk-theme
 
 #utilities
 arandr
@@ -446,6 +445,7 @@ inxi
 mintstick-git
 #mugshot
 neofetch
+#numix-gtk-theme-git
 #oomox
 pamac-aur
 peek
@@ -513,6 +513,7 @@ arcolinux-local-git
 #arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
+#numix-gtk-theme-git
 #arcolinux-nitrogen-git
 #arcolinux-oblogout
 #arcolinux-oblogout-awesome
