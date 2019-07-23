@@ -14,6 +14,8 @@
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+buildFolder="$HOME/arcolinuxb-build"
+outFolder="$HOME/ArcoLinuxB-Out"
 
 #Setting variables
 #Let us change the name"
@@ -52,19 +54,19 @@ newname8='ArcoLinuxB-'$desktop
 
 echo
 echo "################################################################## "
-echo "Phase 1 : clean up and download the latest ArcoLinux-iso from github"
+tput setaf 2;echo "Phase 1 : clean up and download the latest ArcoLinux-iso from github";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the work folder if one exists"
 [ -d ../work ] && rm -rf ../work
 echo "Deleting the build folder if one exists - takes some time"
-[ -d ~/arcolinuxb-build ] && sudo rm -rf ~/arcolinuxb-build
+[ -d $buildFolder ] && sudo rm -rf $buildFolder
 echo "Git cloning files and folder to work folder"
 git clone https://github.com/arcolinux/arcolinux-iso ../work
 
 echo
 echo "################################################################## "
-echo "Phase 2 : Getting the latest versions for some important files"
+tput setaf 2;echo "Phase 2 : Getting the latest versions for some important files";tput sgr0
 echo "################################################################## "
 echo
 echo "Removing the old packages.x86_64 file from work folder"
@@ -80,11 +82,12 @@ wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/
 
 echo
 echo "################################################################## "
-echo "Phase 3 : Renaming the iso to BYOI and the desktop"
+tput setaf 2;echo "Phase 3 : Renaming the ArcoLinux iso";tput sgr0
 echo "################################################################## "
 echo
-echo "Renaming to ArcoLinuxB"-$desktop
-
+echo "Renaming to "$newname1
+echo "Renaming to "$newname2
+echo
 sed -i 's/'$oldname1'/'$newname1'/g' ../work/archiso/build.sh
 sed -i 's/'$oldname2'/'$newname2'/g' ../work/archiso/build.sh
 sed -i 's/'$oldname3'/'$newname3'/g' ../work/archiso/airootfs/etc/os-release
@@ -96,10 +99,9 @@ sed -i 's/'$oldname8'/'$newname8'/g' ../work/archiso/airootfs/etc/hosts
 
 echo
 echo "################################################################## "
-echo "Phase 4 : Let us build the iso"
+tput setaf 2;echo "Phase 4 : Checking if archiso is installed";tput sgr0
 echo "################################################################## "
 echo
-echo "Checking if archiso is installed"
 
 package="archiso"
 
@@ -129,27 +131,6 @@ else
 		echo "################################################################"
 		trizen -S --noconfirm --needed --noedit $package
 
-	elif pacman -Qi yaourt &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with yaourt"
-		echo "################################################################"
-		yaourt -S --noconfirm $package
-
-	elif pacman -Qi pacaur &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with pacaur"
-		echo "################################################################"
-		pacaur -S --noconfirm --noedit  $package
-
-	elif pacman -Qi packer &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with packer"
-		echo "################################################################"
-		packer -S --noconfirm --noedit  $package
-
 	fi
 
 	# Just checking if installation was successful
@@ -164,16 +145,20 @@ else
 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 		echo "!!!!!!!!!  "$package" has NOT been installed"
 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
+		exit 1
 	fi
 
 fi
 
+echo
+echo "################################################################## "
+tput setaf 2;echo "Phase 5 : Moving files to build folder";tput sgr0
+echo "################################################################## "
+echo
 
-
-echo "Copying files and folder to ~/arcolinuxb-build as root"
-sudo mkdir ~/arcolinuxb-build
-sudo cp -r ../work/* ~/arcolinuxb-build
+echo "Copying files and folder to build folder as root"
+sudo mkdir $buildFolder
+sudo cp -r ../work/* $buildFolder
 
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
@@ -182,20 +167,11 @@ sudo chgrp polkitd ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 echo "Deleting the work folder if one exists - clean up"
 [ -d ../work ] && rm -rf ../work
 
-cd ~/arcolinuxb-build/archiso
-
-
-echo "################################################################"
-echo "In order to build an iso we need to clean your cache"
-echo "################################################################"
-
-yes | sudo pacman -Scc
-
+cd $buildFolder/archiso
 
 echo
 echo "################################################################## "
-echo "You have chosen for the linux-lts kernel"
-echo "Let us change some of the packages"
+tput setaf 2;echo "Phase 5 bis : Renaming files for lts";tput sgr0
 echo "################################################################## "
 echo
 
@@ -214,26 +190,34 @@ FIND="#arcolinux-local-repo-git"
 REPLACE="arcolinux-local-repo-git"
 sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
-echo "################################################################"
-echo "Building the iso - Start"
-echo "################################################################"
+echo
+echo "################################################################## "
+tput setaf 2;echo "Phase 6 : Cleaning the cache";tput sgr0
+echo "################################################################## "
+echo
+yes | sudo pacman -Scc
+
+echo
+echo "################################################################## "
+tput setaf 2;echo "Phase 7 : Building the iso";tput sgr0
+echo "################################################################## "
 echo
 
 sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-echo "Phase 5 : Moving the iso to ~/ArcoLinuxB-Out"
+tput setaf 2;echo "Phase 8 : Moving the iso to out folder";tput sgr0
 echo "################################################################## "
 echo
 
-[ -d  ~/ArcoLinuxB-Out ] || mkdir ~/ArcoLinuxB-Out
-cp ~/arcolinuxb-build/archiso/out/arcolinux* ~/ArcoLinuxB-Out
+[ -d $outFolder ] || mkdir $outFolder
+cp $buildFolder/archiso/out/arcolinuxb* $outFolder
 
 echo
 echo "################################################################## "
-echo "Phase 8 : Making sure we start with a clean slate next time"
+tput setaf 2;echo "Phase 9 : Making sure we start with a clean slate next time";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d ~/arcolinuxb-build ] && sudo rm -rf ~/arcolinuxb-build
+[ -d $buildFolder ] && sudo rm -rf $buildFolder
