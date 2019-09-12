@@ -14,4 +14,4 @@ set -e
 ##################################################################################################################
 
 echo "moving iso to insync ArcoLinux-A-Team"
-cp ~/arcolinuxb-build/archiso/out/arcolinuxb* ~/Insync/SHARED/ArcoLinux-A-Team/
+mv ~/ArcoLinuxB-Out/arcolinuxb* ~/Insync/SHARED/ArcoLinux-A-Team/
