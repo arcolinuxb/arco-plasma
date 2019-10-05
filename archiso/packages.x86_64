@@ -483,6 +483,7 @@ yay-bin
 arcolinux-bin-git
 #arcolinux-bspwm-git
 #arcolinux-common-git
+#arcolinux-config-budgie-git
 #arcolinux-config-cinnamon-git
 #arcolinux-config-deepin-git
 #arcolinux-config-git
