@@ -573,7 +573,7 @@ arcolinux-qt5-plasma-git
 #arcolinux-qtile-git
 #arcolinux-rofi-git
 #arcolinux-rofi-themes-git
-#arcolinux-root-git
+arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
 arcolinux-system-config-git
