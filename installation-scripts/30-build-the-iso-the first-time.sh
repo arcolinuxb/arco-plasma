@@ -20,8 +20,8 @@ outFolder="$HOME/ArcoLinuxB-Out"
 #Setting variables
 #Let us change the name"
 #First letter of desktop small
+
 desktop="plasma"
-calamaresdesktopname="plasma"
 
 #build.sh
 oldname1="iso_name=arcolinux"
@@ -62,7 +62,7 @@ echo "Deleting the work folder if one exists"
 echo "Deleting the build folder if one exists - takes some time"
 [ -d $buildFolder ] && sudo rm -rf $buildFolder
 echo "Git cloning files and folder to work folder"
-git clone https://github.com/arcolinux/arcolinux-iso ../work
+git clone https://github.com/arcolinux/arcolinux-iso-dev ../work
 
 echo
 echo "################################################################## "
@@ -175,6 +175,7 @@ echo "################################################################## "
 tput setaf 2;echo "Phase 6 : Cleaning the cache";tput sgr0
 echo "################################################################## "
 echo
+
 yes | sudo pacman -Scc
 
 echo

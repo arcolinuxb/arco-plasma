@@ -20,29 +20,29 @@ outFolder="$HOME/ArcoLinuxB-Out"
 #Setting variables
 #Let us change the name"
 #First letter of desktop small
+
 desktop="plasma"
-calamaresdesktopname="plasma"
 
 #build.sh
 oldname1="iso_name=arcolinux"
-newname1="iso_name=arcolinuxb-$desktop-lts"
+newname1="iso_name=arcolinuxb-$desktop"
 
 oldname2='iso_label="arcolinux'
-newname2='iso_label="alb-'$desktop'-lts'
+newname2='iso_label="alb-'$desktop
 
 #os-release
 oldname3='NAME="ArcoLinux"'
-newname3='NAME="ArcoLinuxB-'$desktop'-lts"'
+newname3='NAME=ArcoLinuxB-'$desktop
 
-oldname4='ID=arcolinux'
-newname4='ID=arcolinuxb-'$desktop'-lts'
+oldname4='ID=ArcoLinux'
+newname4='ID=ArcoLinuxB-'$desktop
 
 #lsb-release
 oldname5='DISTRIB_ID=ArcoLinux'
-newname5='DISTRIB_ID=ArcoLinuxB-'$desktop'-lts'
+newname5='DISTRIB_ID=ArcoLinuxB-'$desktop
 
 oldname6='DISTRIB_DESCRIPTION="ArcoLinux"'
-newname6='DISTRIB_DESCRIPTION=ArcoLinuxB-'$desktop'-lts'
+newname6='DISTRIB_DESCRIPTION=ArcoLinuxB-'$desktop
 
 #hostname
 oldname7='ArcoLinux'
@@ -62,7 +62,7 @@ echo "Deleting the work folder if one exists"
 echo "Deleting the build folder if one exists - takes some time"
 [ -d $buildFolder ] && sudo rm -rf $buildFolder
 echo "Git cloning files and folder to work folder"
-git clone https://github.com/arcolinux/arcolinux-iso ../work
+git clone https://github.com/arcolinux/arcolinux-iso-dev ../work
 
 echo
 echo "################################################################## "
@@ -169,33 +169,14 @@ echo "Deleting the work folder if one exists - clean up"
 
 cd $buildFolder/archiso
 
-echo
-echo "################################################################## "
-tput setaf 2;echo "Phase 5 bis : Renaming files for lts";tput sgr0
-echo "################################################################## "
-echo
-
-WDP=$HOME"/arcolinuxb-build/archiso"
-
-FIND="calamares"
-REPLACE="calamares-lts"
-sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
-
-#extra fix for wrong replacement
-FIND="arcolinuxb-calamares-lts-"$calamaresdesktopname"-git"
-REPLACE="arcolinuxb-calamares-"$calamaresdesktopname"-lts-git"
-sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
-
-FIND="#arcolinux-local-repo-git"
-REPLACE="arcolinux-local-repo-git"
-sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
 echo
 echo "################################################################## "
 tput setaf 2;echo "Phase 6 : Cleaning the cache";tput sgr0
 echo "################################################################## "
 echo
-yes | sudo pacman -Scc
+
+#yes | sudo pacman -Scc
 
 echo
 echo "################################################################## "
