@@ -250,8 +250,8 @@ chromium
 feh
 firefox
 #flashplugin
-galculator
-geany
+#galculator
+#geany
 gimp
 #gmrun
 #gsimplecal
@@ -264,7 +264,7 @@ meld
 #nitrogen
 numlockx
 #pragha
-qbittorrent
+#qbittorrent
 scrot
 simplescreenrecorder
 termite
@@ -319,12 +319,12 @@ arc-gtk-theme
 arandr
 asciinema
 bash-completion
-baobab
+#baobab
 catfish
 cronie
 dconf-editor
 dmidecode
-evince
+#evince
 expac
 file-roller
 #filezilla
@@ -412,7 +412,7 @@ vivaldi
 #xcursor-vanilla-dmz-aa
 
 ###fonts
-ttf-font-awesome
+#ttf-font-awesome
 ttf-ms-fonts
 
 ###icons
@@ -424,8 +424,8 @@ numix-icon-theme-git
 numix-circle-icon-theme-git
 #paper-icon-theme
 sardi-icons
-#surfn-icons-git
-surfn-arc-breeze-icons-git
+surfn-icons-git
+#surfn-arc-breeze-icons-git
 #zafiro-icon-theme
 
 ###network
@@ -480,6 +480,7 @@ yay-bin
 ###########################################################################
 
 #arcolinux-arc-themes-git
+#arcolinux-arc-kde
 #arcolinux-arc-themes-nico-git
 arcolinux-bin-git
 #arcolinux-common-git
