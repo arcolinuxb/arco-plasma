@@ -367,7 +367,7 @@ python2-xdg
 qt5-styleplugins
 #qt5-tools
 #qt5-webkit
-powertop
+#powertop
 reflector
 #redshift
 #rofi
@@ -383,7 +383,7 @@ gufw
 unace
 unrar
 unzip
-vnstat
+#vnstat
 w3m
 webkit2gtk
 wmctrl
@@ -419,13 +419,13 @@ ttf-ms-fonts
 #faba-icon-theme
 #halo-icons-git
 #moka-icon-theme
-numix-circle-arc-icons-git
-numix-icon-theme-git
-numix-circle-icon-theme-git
+#numix-circle-arc-icons-git
+#numix-icon-theme-git
+#numix-circle-icon-theme-git
 #paper-icon-theme
-sardi-icons
-surfn-icons-git
-#surfn-arc-breeze-icons-git
+#sardi-icons
+#surfn-icons-git
+surfn-arc-breeze-icons-git
 #zafiro-icon-theme
 
 ###network
@@ -435,7 +435,7 @@ surfn-icons-git
 mkinitcpio-openswap
 
 ###utilities
-aurvote-git
+#aurvote-git
 conky-lua-archers
 downgrade
 font-manager-git
@@ -480,11 +480,12 @@ yay-bin
 ###########################################################################
 
 #arcolinux-arc-themes-git
-#arcolinux-arc-kde
+arcolinux-arc-kde
 #arcolinux-arc-themes-nico-git
 arcolinux-bin-git
 #arcolinux-common-git
 arcolinux-conky-collection-git
+arcolinux-cron-git
 #arcolinux-docs-git
 #arcolinux-faces-git
 arcolinux-fonts-git
@@ -744,20 +745,20 @@ xfwm4
 #xfce4-xkb-plugin
 
 #xfce4-panel-profiles
-gtk-engine-murrine
+#gtk-engine-murrine
 
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
 
 plasma
-adapta-kde
-arc-kde
-materia-kde
+#adapta-kde
+#arc-kde
+#materia-kde
 partitionmanager
 ktorrent
 kdeconnect
-numix-kde-theme-git
+#numix-kde-theme-git
 packagekit-qt5
 systemd-kcm
 kde-applications-meta
