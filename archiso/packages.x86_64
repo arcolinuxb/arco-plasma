@@ -348,6 +348,7 @@ laptop-detect
 lsb-release
 mlocate
 #nomacs
+oh-my-zsh-git
 p7zip
 plank
 #playerctl
