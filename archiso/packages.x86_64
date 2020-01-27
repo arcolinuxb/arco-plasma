@@ -750,15 +750,15 @@ xfwm4
 #                                ISO SPECIFIC
 ###########################################################################
 
-plasma
-#adapta-kde
-#arc-kde
-#materia-kde
-ocs-url
+plasma-meta
+packagekit-qt5
+kde-applications-meta
 partitionmanager
 ktorrent
 kdeconnect
-#numix-kde-theme-git
-packagekit-qt5
 systemd-kcm
-kde-applications-meta
+ocs-url
+#numix-kde-theme-git
+#adapta-kde
+#arc-kde
+#materia-kde
