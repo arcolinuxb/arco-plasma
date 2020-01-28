@@ -780,18 +780,24 @@ thunar-media-tags-plugin
 plasma-meta
 packagekit-qt5
 partitionmanager
-ktorrent
 kdeconnect
 systemd-kcm
 ocs-url
 systemd-kcm
+yakuake
+spectacle
+okular
+gwenview
+dolphin-plugins
 
-#Groups
+# Groups
+# https://www.archlinux.org/groups/
+
+#kde-applications-meta
 #kdeaccessibility-meta
 kdeadmin-meta
-#kde-applications-meta
 kdebase-meta
-#kde-development-environment-meta
+#kdebindings-meta
 #kdeedu-meta
 #kdegames-meta
 #kdegraphics-meta
@@ -801,3 +807,15 @@ kdebase-meta
 #kdesdk-meta
 #kdeutils-meta
 #kdewebdev-meta
+
+
+#kde-development-environment-meta
+
+
+
+
+
+
+
+
+
