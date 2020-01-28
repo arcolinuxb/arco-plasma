@@ -163,7 +163,6 @@ libdvdcss
 pulseaudio
 pulseaudio-alsa
 #pavucontrol
-#volumeicon
 
 ###bluetooth
 blueberry
@@ -197,10 +196,6 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 mtpfs
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
 udiskie
 udisks2
 xdg-user-dirs
@@ -233,74 +228,61 @@ poppler-qt5
 #########################################################################
 
 ###applications
-atom
-chromium
-#picom
+#atom
+#chromium
 #darktable
 #deadbeef
-#dmenu
+dmenu
 #evolution
 feh
 firefox
 #flashplugin
 #galculator
 #geany
-gimp
-#gmrun
+#gimp
+gmrun
 #gsimplecal
 #guvcview
 imagemagick
-inkscape
+#inkscape
 #libreoffice-fresh
-#lshw
+lshw
 meld
 #nitrogen
 numlockx
 #pragha
 #qbittorrent
 scrot
-simplescreenrecorder
+#simplescreenrecorder
 termite
-#tint2
 variety
-vlc
+#vlc
 
 ###conky
 jq
-lm_sensors
+#lm_sensors
 
 ###cursors
 #xcursor-simpleandsoft
 
 ###fonts
-adobe-source-sans-pro-fonts
+#adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 noto-fonts
 #terminus-font
-ttf-bitstream-vera
+#ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
 ttf-hack
-ttf-inconsolata
-ttf-liberation
+#ttf-inconsolata
+#ttf-liberation
 ttf-roboto
-ttf-ubuntu-font-family
+#ttf-ubuntu-font-family
 
 ###icons
 #arc-icon-theme
 #gnome-icon-theme
 #papirus-icon-theme
-
-###lightdm
-accountsservice
-lightdm
-
-###lx-applications
-#lxappearance
-#lxappearance-gtk3
-#lxappearance-obconf
-#lxappearance-obconf-gtk3
-#lxrandr
 
 ###themes
 #adapta-gtk-theme
@@ -313,7 +295,7 @@ arandr
 asciinema
 bash-completion
 #baobab
-catfish
+#catfish
 cronie
 dconf-editor
 dmidecode
@@ -323,23 +305,23 @@ file-roller
 #filezilla
 git
 gksu
-glances
-#gnome-disk-utility
-#gnome-keyring
+#glances
+gnome-disk-utility
+gnome-keyring
 #gnome-screenshot
 #gnome-software
 #gnome-software-packagekit-plugin
 gparted
 #gpick
-gtop
+#gtop
 hardinfo
-hddtemp
+#hddtemp
 htop
 #hunspell
 #hunspell-en
 #hyphen
 #hyphen-en
-grsync
+#grsync
 intltool
 iw
 jsoncpp
@@ -350,8 +332,8 @@ mlocate
 #nomacs
 oh-my-zsh-git
 p7zip
-plank
-#playerctl
+#plank
+playerctl
 polkit
 #polkit-gnome
 python2-dbus
@@ -366,14 +348,14 @@ reflector
 #redshift
 #rofi
 rxvt-unicode
-simple-scan
+#simple-scan
 #shotwell
 speedtest-cli
-timeshift
+#timeshift
 #tlp
 tree
-ufw
-gufw
+#ufw
+#gufw
 unace
 unrar
 unzip
@@ -382,33 +364,32 @@ w3m
 webkit2gtk
 wmctrl
 xapps
-#xcape
 xdo
 xdotool
 #xdg-desktop-portal-gtk
-youtube-dl
+#youtube-dl
 zenity
 zsh
 zsh-completions
 zsh-syntax-highlighting
 
 ###########################################################################
-#                           ARCOLINUX_REPO_ISO
+#                           ARCOLINUX_REPOS
 ###########################################################################
 
 ###applications
-vivaldi
+#vivaldi
 #vivaldi-codecs-ffmpeg-extra-bin
 
 ###cursors
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
 #oxy-neon
-#xcursor-breeze
+breeze
 #xcursor-vanilla-dmz-aa
 
 ###fonts
-#ttf-font-awesome
+ttf-font-awesome
 ttf-ms-fonts
 
 ###icons
@@ -435,29 +416,27 @@ archiso
 #aurvote-git
 conky-lua-archers
 downgrade
-font-manager-git
-glxinfo
+#font-manager-git
+#glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
-#menulibre
 mintstick-git
-#mugshot
 neofetch
 #numix-gtk-theme-git
 pamac-aur
-peek
+#peek
 #pulseaudio-equalizer-ladspa
 python-pyparted
 #python-pywal
-screenkey-git
+#screenkey-git
 sublime-text-dev
 the_platinum_searcher-bin
 tmux
 trizen
 urxvt-perls
 urxvt-resize-font-git
-wttr
+#wttr
 yad
 yakuake
 yay-bin
@@ -466,8 +445,7 @@ yay-bin
 #                               GAMES
 ###########################################################################
 
-#steam
-#steam-native-runtime
+#arcolinux-meta-steam
 #lutris
 #sauerbraten
 #xonotic
@@ -476,7 +454,6 @@ yay-bin
 #                           ARCOLINUX FOLDER
 ###########################################################################
 
-#arcolinux-arc-themes-git
 arcolinux-arc-kde
 #arcolinux-arc-themes-nico-git
 arcolinux-bin-git
@@ -487,7 +464,7 @@ arcolinux-cron-git
 #arcolinux-docs-git
 #arcolinux-faces-git
 arcolinux-fonts-git
-arcolinux-geany-git
+#arcolinux-geany-git
 arcolinux-grub-theme-vimix-git
 arcolinux-hblock-git
 arcolinux-keyring
@@ -512,8 +489,8 @@ arcolinux-neofetch-git
 #arcolinux-obmenu-generator-xtended-git
 #arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
-arcolinux-plank-git
-arcolinux-plank-themes-git
+#arcolinux-plank-git
+#arcolinux-plank-themes-git
 #arcolinux-polybar-git
 #arcolinux-qt5-git
 arcolinux-qt5-plasma-git
@@ -616,9 +593,11 @@ arcolinux-plasma-dconf-git
 ###########################################################################
 
 arco-calamares
-#arco-calamares-dev
 #arco-calamares-comp
+#arco-calamares-dev
+#arco-calamares-next
 arcolinux-system-installation-git
+#arcolinux-config-live-session-git
 
 ###########################################################################
 #                                CALAMARES DEPENDENCIES
@@ -665,18 +644,50 @@ arcob-calamares-config-plasma-git
 #arco-calamares-config-git
 #arco-calamares-config-comp-git
 #arco-calamares-config-dev-git
+#arco-calamares-config-next-git
 #arcod-calamares-config-git
 #arcod-calamares-config-comp-git
 #arcod-calamares-config-dev-git
+#arcod-calamares-config-next-git
 
 ###########################################################################
-#                                DESKTOP SPECIFIC
+#                                DISPLAY MANAGER
+###########################################################################
+
+###lightdm
+accountsservice
+lightdm
+
+###########################################################################
+#                         PICOM OR COMPTON
+###########################################################################
+
+#picom
+
+###########################################################################
+#                         GENERAL DESKTOP RELATED
+###########################################################################
+
+#mugshot
+#menulibre
+#volumeicon
+
+###########################################################################
+#                         ARCOLINUX ISO SPECIFIC
+###########################################################################
+
+###########################################################################
+#                                 i3
 ###########################################################################
 
 ###i3wm
 #i3status
 #i3blocks
 #i3-gaps
+
+###########################################################################
+#                               OPENBOX
+###########################################################################
 
 ###openbox
 #gtk2-perl
@@ -686,15 +697,28 @@ arcob-calamares-config-plasma-git
 #obconf
 #openbox
 #perl-linux-desktopfiles
+#tint2
+#xcape
+#openbox-themes-pambudi-git
+
+###lx-applications
+#lxappearance
+#lxappearance-gtk3
+#lxappearance-obconf
+#lxappearance-obconf-gtk3
+#lxrandr
 
 ###########################################################################
 #                                XFCE
 ###########################################################################
 
-###xfce4 group content
+### xfce4 group content
+# https://www.archlinux.org/groups/x86_64/xfce4/
 exo
 #garcon
 thunar
+thunar-volman
+tumbler
 #xfce4-appfinder
 xfce4-panel
 #xfce4-power-manager
@@ -706,11 +730,14 @@ xfdesktop
 xfwm4
 #xfwm4-themes
 
-###xfce4-goodies group content
+### xfce4-goodies group content
+# https://www.archlinux.org/groups/x86_64/xfce4-goodies/
 #mousepad
 #orage
 #parole
 #ristretto
+thunar-archive-plugin
+thunar-media-tags-plugin
 #xfburn
 #xfce4-artwork
 #xfce4-battery-plugin
@@ -730,6 +757,7 @@ xfwm4
 #xfce4-notes-plugin
 #xfce4-notifyd
 #xfce4-pulseaudio-plugin
+#xfce4-screensaver
 #xfce4-screenshooter
 #xfce4-sensors-plugin
 #xfce4-smartbookmark-plugin
@@ -744,7 +772,6 @@ xfwm4
 #xfce4-xkb-plugin
 
 #xfce4-panel-profiles
-#gtk-engine-murrine
 
 ###########################################################################
 #                                ISO SPECIFIC
@@ -752,13 +779,25 @@ xfwm4
 
 plasma-meta
 packagekit-qt5
-kde-applications-meta
 partitionmanager
 ktorrent
 kdeconnect
 systemd-kcm
 ocs-url
-#numix-kde-theme-git
-#adapta-kde
-#arc-kde
-#materia-kde
+systemd-kcm
+
+#Groups
+#kdeaccessibility-meta
+kdeadmin-meta
+#kde-applications-meta
+kdebase-meta
+#kde-development-environment-meta
+#kdeedu-meta
+#kdegames-meta
+#kdegraphics-meta
+#kdemultimedia-meta
+#kdenetwork-meta
+#kdepim-meta
+#kdesdk-meta
+#kdeutils-meta
+#kdewebdev-meta
