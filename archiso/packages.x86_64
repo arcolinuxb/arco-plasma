@@ -232,7 +232,7 @@ poppler-qt5
 #chromium
 #darktable
 #deadbeef
-dmenu
+#dmenu
 #evolution
 feh
 firefox
@@ -598,7 +598,7 @@ arco-calamares
 #arco-calamares-next
 arcolinux-system-installation-git
 #arcolinux-config-live-session-git
-#arcolinux-welcome-app-git
+arcolinux-welcome-app-git
 
 ###########################################################################
 #                                CALAMARES DEPENDENCIES
@@ -811,12 +811,3 @@ kdebase-meta
 
 
 #kde-development-environment-meta
-
-
-
-
-
-
-
-
-
