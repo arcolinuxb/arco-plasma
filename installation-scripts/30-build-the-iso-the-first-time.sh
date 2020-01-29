@@ -64,6 +64,9 @@ echo "Deleting the build folder if one exists - takes some time"
 echo "Git cloning files and folder to work folder"
 git clone https://github.com/arcolinux/arcolinux-iso ../work
 
+#plasma fix for kpmcore and partitionmanager only if you have internet will it work
+echo "yes | pacman -S kpmcore" | tee --append ../work/archiso/airootfs/usr/local/bin/arcolinux-cleanup.sh
+
 echo
 echo "################################################################## "
 tput setaf 2;echo "Phase 2 : Getting the latest versions for some important files";tput sgr0
