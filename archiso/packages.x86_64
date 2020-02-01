@@ -298,6 +298,7 @@ bash-completion
 #catfish
 cronie
 dconf-editor
+dex
 dmidecode
 #evince
 expac
@@ -612,7 +613,8 @@ kconfig
 ki18n
 kservice
 kwidgetsaddons
-kpmcore
+#kpmcore
+kpmcore-git
 boost-libs
 libpwquality
 squashfs-tools
