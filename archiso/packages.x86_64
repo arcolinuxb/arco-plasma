@@ -298,7 +298,7 @@ bash-completion
 #catfish
 cronie
 dconf-editor
-dex
+#dex
 dmidecode
 #evince
 expac
