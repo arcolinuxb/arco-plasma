@@ -167,11 +167,7 @@ sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 sudo chgrp polkitd ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 
-echo "Deleting the work folder if one exists - clean up"
-[ -d ../work ] && rm -rf ../work
-
 cd $buildFolder/archiso
-
 
 echo
 echo "################################################################## "
