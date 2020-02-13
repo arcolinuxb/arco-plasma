@@ -58,7 +58,7 @@ tput setaf 2;echo "Phase 1 : clean up and download the latest ArcoLinux-iso from
 echo "################################################################## "
 echo
 echo "Deleting the work folder if one exists"
-[ -d ../work ] && rm -rf ../work
+[ -d ../work ] && sudo rm -rf ../work
 echo "Deleting the build folder if one exists - takes some time"
 [ -d $buildFolder ] && sudo rm -rf $buildFolder
 echo "Git cloning files and folder to work folder"
