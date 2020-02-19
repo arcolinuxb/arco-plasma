@@ -266,7 +266,7 @@ jq
 #xcursor-simpleandsoft
 
 ###fonts
-#adobe-source-sans-pro-fonts
+adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 noto-fonts
 #terminus-font
@@ -277,7 +277,7 @@ ttf-hack
 #ttf-inconsolata
 #ttf-liberation
 ttf-roboto
-#ttf-ubuntu-font-family
+ttf-ubuntu-font-family
 
 ###icons
 #arc-icon-theme
