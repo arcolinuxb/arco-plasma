@@ -65,7 +65,7 @@ echo "Git cloning files and folder to work folder"
 git clone https://github.com/arcolinux/arcolinux-iso ../work
 
 #plasma fix for kpmcore and partitionmanager only if you have internet will it work
-echo "yes | pacman -S kpmcore" | tee --append ../work/archiso/airootfs/usr/local/bin/arcolinux-cleanup.sh
+#echo "yes | pacman -S kpmcore" | tee --append ../work/archiso/airootfs/usr/local/bin/arcolinux-cleanup.sh
 
 echo
 echo "################################################################## "
