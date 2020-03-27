@@ -247,7 +247,7 @@ imagemagick
 #inkscape
 #libreoffice-fresh
 lshw
-meld
+#meld
 #nitrogen
 numlockx
 #pragha
@@ -433,7 +433,7 @@ python-pyparted
 #python-pywal
 #screenkey-git
 #sublime-text-dev
-the_platinum_searcher-bin
+#the_platinum_searcher-bin
 tmux
 trizen
 urxvt-perls
