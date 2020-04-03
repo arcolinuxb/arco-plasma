@@ -723,20 +723,20 @@ lightdm
 
 ### xfce4 group content
 # https://www.archlinux.org/groups/x86_64/xfce4/
-exo
+#exo
 #garcon
 thunar
 thunar-volman
 tumbler
 #xfce4-appfinder
-xfce4-panel
+#xfce4-panel
 #xfce4-power-manager
-xfce4-session
-xfce4-settings
+#xfce4-session
+#xfce4-settings
 #xfce4-terminal
 #xfconf
-xfdesktop
-xfwm4
+#xfdesktop
+#xfwm4
 #xfwm4-themes
 
 ### xfce4-goodies group content
