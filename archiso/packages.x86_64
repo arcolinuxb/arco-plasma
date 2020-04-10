@@ -479,6 +479,7 @@ arcolinux-lightdm-gtk-greeter-settings
 #arcolinux-local-applications-plasma-hide-git
 #arcolinux-local-xfce4-git
 #arcolinux-logo-git
+#arcolinux-logout-git
 #arcolinux-lxqt-applications-add-git
 arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
