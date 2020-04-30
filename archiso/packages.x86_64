@@ -803,7 +803,6 @@ dolphin-plugins
 kde-gtk-config
 ark
 ffmpegthumbs
-kdenetwork-filesharing
 
 # Groups
 # https://www.archlinux.org/groups/
@@ -813,6 +812,7 @@ kdenetwork-filesharing
 kdeadmin-meta
 kdebase-meta
 cryfs
+#kdenetwork-filesharing
 #kdebindings
 #kdeedu-meta
 #kdegames-meta
