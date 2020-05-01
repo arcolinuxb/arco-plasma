@@ -245,7 +245,7 @@ gmrun
 imagemagick
 #inkscape
 #libreoffice-fresh
-lshw
+#lshw
 #meld
 #nitrogen
 numlockx
@@ -298,7 +298,7 @@ bash-completion
 cronie
 dconf-editor
 #dex
-dmidecode
+#dmidecode
 #evince
 expac
 file-roller
