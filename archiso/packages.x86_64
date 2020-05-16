@@ -37,7 +37,7 @@ irssi
 #iwd
 jfsutils
 #lftp
-libatomic_ops
+#libatomic_ops
 linux-atm
 linux-firmware
 logrotate
