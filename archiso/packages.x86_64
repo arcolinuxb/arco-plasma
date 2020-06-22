@@ -538,6 +538,7 @@ arcolinux-zsh-git
 arcolinux-plasma-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
+#arcolinux-ukui-git
 arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
@@ -564,6 +565,7 @@ arcolinux-xfce-git
 arcolinux-config-plasma-git
 #arcolinux-config-plasma-nemesis-git
 #arcolinux-config-qtile-git
+#arcolinux-config-ukui-git
 #arcolinux-config-xfce-git
 #arcolinux-config-xmonad-git
 #arcolinux-config-xtended-git
@@ -589,6 +591,7 @@ arcolinux-config-plasma-git
 #arcolinux-openbox-dconf-git
 arcolinux-plasma-dconf-git
 #arcolinux-qtile-dconf-git
+#arcolinux-ukui-dconf-git
 #arcolinux-xfce-dconf-git
 #arcolinux-xmonad-dconf-git
 #arcolinux-xtended-dconf-git
@@ -648,6 +651,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-openbox-git
 arcob-calamares-config-plasma-git
 #arcob-calamares-config-qtile-git
+#arcob-calamares-config-ukui-git
 #arcob-calamares-config-xfce-git
 #arcob-calamares-config-xmonad-git
 #arcob-calamares-config-xtended-git
