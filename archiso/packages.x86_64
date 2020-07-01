@@ -502,7 +502,9 @@ arcolinux-qt5-plasma-git
 arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
+#arcolinux-spectrwm-git
 arcolinux-system-config-git
+#arcolinuxd-system-config-git
 #arcolinux-systemd-services-git
 arcolinux-termite-themes-git
 #arcolinux-tint2-git
@@ -565,6 +567,7 @@ arcolinux-xfce-git
 arcolinux-config-plasma-git
 #arcolinux-config-plasma-nemesis-git
 #arcolinux-config-qtile-git
+#arcolinux-config-spectrwm-git
 #arcolinux-config-ukui-git
 #arcolinux-config-xfce-git
 #arcolinux-config-xmonad-git
@@ -591,6 +594,7 @@ arcolinux-config-plasma-git
 #arcolinux-openbox-dconf-git
 arcolinux-plasma-dconf-git
 #arcolinux-qtile-dconf-git
+#arcolinux-spectrwm-dconf-git
 #arcolinux-ukui-dconf-git
 #arcolinux-xfce-dconf-git
 #arcolinux-xmonad-dconf-git
@@ -651,6 +655,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-openbox-git
 arcob-calamares-config-plasma-git
 #arcob-calamares-config-qtile-git
+#arcob-calamares-config-spectrwm-git
 #arcob-calamares-config-ukui-git
 #arcob-calamares-config-xfce-git
 #arcob-calamares-config-xmonad-git
