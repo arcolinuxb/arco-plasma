@@ -502,7 +502,6 @@ arcolinux-qt5-plasma-git
 arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
-#arcolinux-spectrwm-git
 arcolinux-system-config-git
 #arcolinuxd-system-config-git
 #arcolinux-systemd-services-git
@@ -540,6 +539,7 @@ arcolinux-zsh-git
 arcolinux-plasma-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
+#arcolinux-spectrwm-git
 #arcolinux-ukui-git
 arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
