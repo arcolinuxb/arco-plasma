@@ -95,6 +95,7 @@ sed -i 's/'$oldname3'/'$newname3'/g' ../work/archiso/airootfs/etc/dev-rel
 sed -i 's/'$oldname7'/'$newname7'/g' ../work/archiso/airootfs/etc/hostname
 sed -i 's/'$oldname9'/'$newname9'/g' ../work/archiso/airootfs/etc/lightdm/lightdm.conf
 sed -i 's/'$oldname10'/'$newname10'/g' ../work/archiso/airootfs/etc/lightdm/lightdm.conf
+
 ##############  ONLY PLASMA ###############
 sed -i 's/'$oldname11'/'$newname11'/g' ../work/archiso/airootfs/usr/share/icons/default/index.theme
 
