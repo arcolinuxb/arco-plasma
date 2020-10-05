@@ -25,7 +25,7 @@ dosfstools
 edk2-shell
 efibootmgr
 ethtool
-exfat-utils
+exfatprogs
 f2fs-tools
 fsarchiver
 gnu-netcat
@@ -313,6 +313,7 @@ bash-completion
 dconf-editor
 #dex
 #dmidecode
+edid-decode-git
 #evince
 expac
 file-roller
@@ -333,6 +334,7 @@ hardinfo
 htop
 #hunspell
 #hunspell-en_US
+hw-probe
 #hyphen
 #hyphen-en
 #grsync
@@ -542,6 +544,7 @@ arcolinux-zsh-git
 #arcolinux-cinnamon-git
 #arcolinux-deepin-git
 #arcolinux-dwm-git
+#arcolinux-dwm-slstatus-git
 #arcolinux-enlightenment-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
