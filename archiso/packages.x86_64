@@ -428,6 +428,7 @@ surfn-arc-breeze-icons-git
 mkinitcpio-openswap
 
 ###utilities-repo
+appstream
 archiso
 conky-lua-archers
 downgrade
