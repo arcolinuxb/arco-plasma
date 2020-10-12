@@ -43,7 +43,7 @@ echo
 	echo "Bulding version                        : "$arcolinuxVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
-	echo "Build folder                            : "$buildFolder
+	echo "Build folder                           : "$buildFolder
 	echo "Out folder                             : "$outFolder
 	echo "################################################################## "		
 
