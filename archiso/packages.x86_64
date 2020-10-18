@@ -650,9 +650,8 @@ kconfig
 ki18n
 kservice
 kwidgetsaddons
-#kpmcore
-arcolinux-kpmcore
-#kpmcore-git
+kpmcore
+#arcolinux-kpmcore
 boost-libs
 libpwquality
 squashfs-tools
