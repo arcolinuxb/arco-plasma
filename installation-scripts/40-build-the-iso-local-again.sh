@@ -238,7 +238,7 @@ echo
 #echo "################################################################## "
 #echo
 
-	#echo "Cleaning the cache  from /var/cache/pacman/pkg/"
+	#echo "Cleaning the cache from /var/cache/pacman/pkg/"
 	#yes | sudo pacman -Scc
 
 echo
@@ -251,7 +251,7 @@ echo "################################################################## "
 echo
 
 	cd $buildFolder/archiso/
-	sudo ./build.sh
+	sudo mkarchiso -v -w $buildFolder $buildFolder/archiso/
 
 echo
 echo "################################################################## "

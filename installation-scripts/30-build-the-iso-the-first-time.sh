@@ -251,7 +251,7 @@ echo "################################################################## "
 echo
 
 	cd $buildFolder/archiso/
-	sudo ./build.sh
+	sudo mkarchiso -v -w $buildFolder $buildFolder/archiso/
 
 echo
 echo "################################################################## "
