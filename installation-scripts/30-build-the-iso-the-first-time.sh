@@ -29,7 +29,7 @@ echo
 	desktop="plasma"
 	lightdmDesktop="plasma"
 
-	arcolinuxVersion='v20.11.9'
+	arcolinuxVersion='v21.01.2'
 
 	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
