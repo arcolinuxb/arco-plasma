@@ -856,6 +856,8 @@ ffmpegthumbs
 #kdeaccessibility-meta
 kde-system-meta
 cryfs
+encfs
+gocryptfs
 kate
 #kdenetwork-filesharing
 #kdebindings
