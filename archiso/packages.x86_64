@@ -312,6 +312,7 @@ bash-completion
 #cronie
 dconf-editor
 #dex
+#discord
 #dmidecode
 edid-decode-git
 #evince
@@ -367,6 +368,7 @@ rxvt-unicode
 #shotwell
 speedtest-cli
 #timeshift
+#telegram-desktop
 #tlp
 tree
 #ufw
