@@ -132,6 +132,7 @@ echo
 	mkdir $buildFolder
 	cp -r ../work/archiso $buildFolder/archiso
 	rm -rf ../work
+
 echo
 echo "################################################################## "
 tput setaf 2
