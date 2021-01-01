@@ -46,6 +46,7 @@ jfsutils
 linux
 linux-atm
 linux-firmware
+linux-headers
 logrotate
 lsscsi
 lvm2
