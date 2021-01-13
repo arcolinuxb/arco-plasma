@@ -786,8 +786,8 @@ lightdm
 # https://www.archlinux.org/groups/x86_64/xfce4/
 #exo
 #garcon
-thunar
-thunar-volman
+#thunar
+#thunar-volman
 tumbler
 #xfce4-appfinder
 #xfce4-panel
@@ -806,8 +806,8 @@ tumbler
 #orage
 #parole
 #ristretto
-thunar-archive-plugin
-thunar-media-tags-plugin
+#thunar-archive-plugin
+#thunar-media-tags-plugin
 #xfburn
 #xfce4-artwork
 #xfce4-battery-plugin
