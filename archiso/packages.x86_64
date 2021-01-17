@@ -581,7 +581,7 @@ arcolinux-plasma-git
 #                           ARCOLINUX CONFIG FOLDER
 ###########################################################################
 
-#arcolinux-config-all-desktops-git
+arcolinux-config-all-desktops-git
 #arcolinux-config-awesome-git
 #arcolinux-config-bspwm-git
 #arcolinux-config-budgie-git
