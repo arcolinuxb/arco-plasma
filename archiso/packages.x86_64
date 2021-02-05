@@ -857,6 +857,7 @@ dolphin-plugins
 kde-gtk-config
 ark
 ffmpegthumbs
+sddm-kcm
 
 # Groups
 # https://www.archlinux.org/groups/
