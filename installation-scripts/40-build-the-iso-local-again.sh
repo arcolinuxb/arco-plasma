@@ -196,8 +196,8 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name=arcolinux'
-	newname1='iso_name=arcolinuxb-'$desktop
+	oldname1='iso_name="arcolinux'
+	newname1='iso_name="arcolinuxb-'$desktop
 
 	oldname2='iso_label="arcolinux'
 	newname2='iso_label="arcolinuxb-'$desktop
