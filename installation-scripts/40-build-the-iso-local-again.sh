@@ -196,17 +196,17 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="arcolinux'
+	oldname1='iso_name="arcolinuxl'
 	newname1='iso_name="arcolinuxb-'$desktop
 
-	oldname2='iso_label="arcolinux'
+	oldname2='iso_label="arcolinuxl'
 	newname2='iso_label="arcolinuxb-'$desktop
 
-	oldname3='ArcoLinux'
+	oldname3='ArcoLinuxL'
 	newname3='ArcoLinuxB-'$desktop
 
 	#hostname
-	oldname4='ArcoLinux'
+	oldname4='ArcoLinuxL'
 	newname4='ArcoLinuxB-'$desktop
 
 	#sddm.conf user-session
@@ -220,6 +220,12 @@ echo
 	sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/archiso/airootfs/etc/dev-rel
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/airootfs/etc/hostname
 	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/sddm.conf
+	#bios
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/syslinux/archiso_sys-linux.cfg
+	#uefi
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/archiso-x86_64-linux.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/nomodeset.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/nvidea.conf
 
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)
