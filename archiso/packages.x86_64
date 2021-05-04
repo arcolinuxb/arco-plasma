@@ -141,10 +141,9 @@ mesa
 #bumblebee
 #optimus-manager
 #optimus-manager-qt
-#nvidia
-#nvidia-utils
-#nvidia-390xx
-#nvidia-390xx-utils
+nvidia
+nvidia-utils
+nvidia-settings
 #libva-intel-driver
 #libva-vdpau-driver
 #mesa-demos
@@ -463,7 +462,6 @@ python-pyparted
 #screenkey-git
 #sublime-text-dev
 #the_platinum_searcher-bin
-tmux
 trizen
 urxvt-perls
 urxvt-resize-font-git
