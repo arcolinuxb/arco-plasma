@@ -443,7 +443,7 @@ ttf-ms-fonts
 #paper-icon-theme
 #sardi-icons
 #surfn-icons-git
-surfn-arc-breeze-icons-git
+#surfn-arc-breeze-icons-git
 #zafiro-icon-theme
 
 ###network
@@ -897,6 +897,7 @@ kde-gtk-config
 ark
 ffmpegthumbs
 sddm-kcm
+surfn-plasma-dark-icons-git
 
 # Groups
 # https://www.archlinux.org/groups/
