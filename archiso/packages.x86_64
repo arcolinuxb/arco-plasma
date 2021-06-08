@@ -453,6 +453,7 @@ ttf-ms-fonts
 mkinitcpio-openswap
 
 ###utilities-repo
+alacritty
 appstream
 archiso
 conky-lua-archers
