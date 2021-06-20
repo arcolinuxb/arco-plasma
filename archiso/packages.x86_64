@@ -524,7 +524,8 @@ arcolinux-fonts-git
 arcolinux-grub-theme-vimix-git
 #arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-arc-git
-arcolinux-gtk3-surfn-arc-breeze-git
+#arcolinux-gtk3-surfn-arc-breeze-git
+arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
 arcolinux-keyring
@@ -606,8 +607,8 @@ arcolinux-zsh-git
 #arcolinux-openbox-git
 #arcolinux-openboxb-git
 #arcolinux-openbox-xtended-git
-arcolinux-plasma-git
-#arcolinux-plasma-nemesis-git
+#arcolinux-plasma-git
+arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
 #arcolinux-spectrwm-git
 #arcolinux-ukui-git
