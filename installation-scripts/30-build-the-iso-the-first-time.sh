@@ -224,7 +224,7 @@ echo
 	#uefi
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/archiso-x86_64-linux.conf
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/nomodeset.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/nvidea.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/nvidia.conf
 
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)
