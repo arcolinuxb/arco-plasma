@@ -144,7 +144,15 @@ echo
 	echo "Git clone the latest ArcoLinux-iso from github"
 	echo
 	git clone https://github.com/arcolinux/arcolinuxl-iso ../work
-
+	echo
+	echo "Adding the content of the /personal folder"
+	echo
+	cp -rf ../personal/ ../work/archiso/airootfs/
+	if test -f ../work/archiso/airootfs/personal/.gitkeep ; then
+		echo ".gitkeep is now removed"
+		echo
+		rm ../work/archiso/airootfs/personal/.gitkeep
+    fi
 	echo "Copying the Archiso folder to build work"
 	echo
 	mkdir $buildFolder
