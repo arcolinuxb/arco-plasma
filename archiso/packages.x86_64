@@ -925,6 +925,8 @@ gocryptfs
 kate
 kdenetwork-filesharing
 ksysguard
+#avoid errors in sddm themes
+qt5-virtualkeyboard
 #kdebindings
 #kdeedu-meta
 #kdegames-meta
