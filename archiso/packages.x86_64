@@ -410,8 +410,8 @@ w3m
 webkit2gtk
 wmctrl
 xapp
-xdo
-xdotool
+#xdo
+#xdotool
 #xdg-desktop-portal-gtk
 #youtube-dl
 zenity
@@ -461,7 +461,7 @@ mkinitcpio-openswap
 
 ###utilities-repo
 alacritty
-appstream
+#appstream
 archiso
 conky-lua-archers
 downgrade
