@@ -31,8 +31,9 @@
 #https://blog.nillsf.com/index.php/2021/05/27/github-sso-using-password-protected-ssh-keys
 
 project=$(basename `pwd`)
+githubdir="arcolinuxb"
 echo "-----------------------------------------------------------------------------"
-echo "this is project https://github.com/arcolinux/"$project
+echo "this is project https://github.com/$githubdir/$project"
 echo "-----------------------------------------------------------------------------"
 
 echo
@@ -70,7 +71,7 @@ case $CHOICE in
 			sudo git config --system core.editor nano
 			#git config --global credential.helper cache
 			#git config --global credential.helper 'cache --timeout=32000'
-      git remote set-url origin git@github.com-arc:arcolinuxb/$project
+      git remote set-url origin git@github.com-arc:$githubdir/$project
       echo
       echo "Everything set"
       ;;
