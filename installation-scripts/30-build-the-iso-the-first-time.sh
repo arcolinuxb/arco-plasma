@@ -38,6 +38,10 @@ echo
 	buildFolder=$HOME"/arcolinuxb-build"
 	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
+	
+	# if you want to use your personal repo and personal packages
+	# set to true (default:false)
+	personalrepo=false
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
@@ -134,6 +138,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
+echo "- add our own personal repo + add your packages to packages-personal-repo.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -144,6 +149,24 @@ echo
 	echo "Git clone the latest ArcoLinux-iso from github"
 	echo
 	git clone https://github.com/arcolinux/arcolinuxl-iso ../work
+	echo
+
+	if [ $personalrepo == true ]; then
+		echo "Adding our own repo to /etc/pacman.conf"
+		echo "Change these lines to reflect your own repo"
+		echo "Copy/paste these lines to add more repos"
+		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
+		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+echo '
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
+echo '
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+	fi
+
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
@@ -167,6 +190,7 @@ echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from build folder"
 echo "- Copying the new packages.x86_64 file to the build folder"
+echo "- Adding packages from your personal repository - packages-personal-repo.x86_64"
 echo "- Changing group for polkit folder"
 tput sgr0
 echo "################################################################## "
@@ -182,9 +206,18 @@ echo
 
 	echo "Removing the old packages.x86_64 file from build folder"
 	rm $buildFolder/archiso/packages.x86_64
+	rm $buildFolder/archiso/packages-personal-repo.x86_64
 	echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
+	echo
+	
+	if [ $personalrepo == true ]; then
+		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
+		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
+	fi
+
 	echo
 	echo "Changing group for polkit folder"
 	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
