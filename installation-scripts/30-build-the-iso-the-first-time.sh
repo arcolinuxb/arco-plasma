@@ -39,8 +39,12 @@ echo
 	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
-	# if you want to use your personal repo and personal packages
-	# set to true (default:false)
+	# If you are ready to use your personal repo and personal packages
+	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
+	# 1. set variable personalrepo to true in this file (default:false)
+	# 2. change the file personal-repo to reflect your repo
+	# 3. add your applications to the file packages-personal-repo.x86_64
+
 	personalrepo=false
 
 	echo "################################################################## "
@@ -138,7 +142,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
-echo "- add our own personal repo + add your packages to packages-personal-repo.x86_64"
+echo "- Add our own personal repo + add your packages to packages-personal-repo.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -153,28 +157,22 @@ echo
 
 	if [ $personalrepo == true ]; then
 		echo "Adding our own repo to /etc/pacman.conf"
-		echo "Change these lines to reflect your own repo"
-		echo "Copy/paste these lines to add more repos"
 		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
 		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
-echo '
-[nemesis_repo]
-SigLevel = Optional TrustedOnly
-Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
-echo '
-[nemesis_repo]
-SigLevel = Optional TrustedOnly
-Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		cat personal-repo | sudo tee -a ../work/archiso/pacman.conf
+		cat personal-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	fi
 
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
 	cp -rf ../personal/ ../work/archiso/airootfs/
+
 	if test -f ../work/archiso/airootfs/personal/.gitkeep ; then
-		echo ".gitkeep is now removed"
 		echo
 		rm ../work/archiso/airootfs/personal/.gitkeep
+		echo ".gitkeep is now removed"
+		echo
     fi
 	echo "Copying the Archiso folder to build work"
 	echo
