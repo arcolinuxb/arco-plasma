@@ -933,7 +933,8 @@ arcolinux-sddm-simplicity-git
 #                                ISO SPECIFIC
 ###########################################################################
 
-plasma-meta
+#plasma-meta
+plasma
 packagekit-qt5
 partitionmanager
 kdeconnect
