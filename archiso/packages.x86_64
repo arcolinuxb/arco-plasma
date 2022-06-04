@@ -335,7 +335,7 @@ ttf-ubuntu-font-family
 
 ###themes
 #adapta-gtk-theme
-#arc-gtk-theme
+arc-gtk-theme
 #arc-darkest-theme-git
 kvantum
 #openbox-arc-git
@@ -545,7 +545,7 @@ arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
 arcolinux-keyring
-#arcolinux-kvantum-git
+arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
 #arcolinux-kvantum-plasma-git
 #arcolinux-kvantum-theme-arc-git
@@ -588,7 +588,7 @@ arcolinux-systemd-services-git
 arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
-archlinux-tweak-tool-git
+#archlinux-tweak-tool-git
 arcolinux-variety-git
 arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
@@ -951,10 +951,9 @@ kde-gtk-config
 ark
 ffmpegthumbs
 sddm-kcm
-surfn-plasma-dark-icons-git
 kinit
 audiocd-kio
-kmix
+#kmix
 
 # Groups
 # https://www.archlinux.org/groups/
@@ -983,4 +982,7 @@ qt5-virtualkeyboard
 
 
 #kde-development-environment-meta
-surfn-plasma-dark-tela-git
+surfn-plasma-dark-icons-git
+surfn-plasma-dark-tela-icons-git
+
+#archlinux-tweak-tool-dev-git
