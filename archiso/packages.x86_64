@@ -938,6 +938,7 @@ kdenetwork-filesharing
 ksysguard
 #avoid errors in sddm themes
 qt5-virtualkeyboard
+qt5-charts
 #kdebindings
 #kdeedu-meta
 #kdegames-meta
