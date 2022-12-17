@@ -601,8 +601,8 @@ arcolinux-zsh-git
 #arcolinux-openbox-git
 #arcolinux-openboxb-git
 #arcolinux-openbox-xtended-git
-arcolinux-plasma-git
-#arcolinux-plasma-nemesis-git
+#arcolinux-plasma-git
+arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
 #arcolinux-spectrwm-git
 #arcolinux-sway-git
@@ -965,3 +965,8 @@ surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
 
 #archlinux-tweak-tool-dev-git
+
+##wayland
+
+
+plasma-wayland-session
