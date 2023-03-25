@@ -960,12 +960,9 @@ qt5-charts
 #kdeutils-meta
 #kdewebdev-meta
 
-
 #kde-development-environment-meta
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
-
-#archlinux-tweak-tool-dev-git
 
 ##wayland
 
