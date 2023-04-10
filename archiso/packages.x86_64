@@ -963,8 +963,7 @@ qt5-charts
 #kde-development-environment-meta
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
+ast-firmware
 
 ##wayland
-
-
 plasma-wayland-session
