@@ -134,6 +134,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
+libadwaita-without-adwaita-git
 linux-headers
 logrotate
 ntp
