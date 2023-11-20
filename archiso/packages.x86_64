@@ -10,12 +10,10 @@ arch-install-scripts
 #b43-fwcutter
 base
 bind
-#brltty
 broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
-#crda
 cryptsetup
 #darkhttpd
 ddrescue
@@ -44,8 +42,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-#ipw2100-fw
-#ipw2200-fw
 irssi
 #iw
 #iwd
@@ -58,7 +54,6 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-linux-firmware-qlogic
 linux-firmware-marvell
 #livecd-sounds
 lsscsi
@@ -449,6 +444,7 @@ mkinitcpio-openswap
 ###utilities-repo
 alacritty
 appstream
+appstream-qt5
 archiso
 conky-lua-archers
 downgrade
@@ -461,7 +457,9 @@ inxi
 mintstick-git
 neofetch
 #numix-gtk-theme-git
-arcolinux-pamac-all
+#arcolinux-pamac-all
+octopi
+octopi-notifier-qt5
 #pamac-aur
 paru-bin
 #peek
