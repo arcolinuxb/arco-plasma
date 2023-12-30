@@ -173,8 +173,6 @@ virtualbox-guest-utils
 ###packages for dual boot
 os-prober
 
-###LUKS encryption
-cryptsetup
 
 ###audio
 alsa-firmware
