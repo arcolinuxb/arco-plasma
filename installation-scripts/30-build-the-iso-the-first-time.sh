@@ -29,12 +29,12 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	arcolinuxVersion='v24.02.04'
+	arcolinuxVersion='v24.03.01'
 
 	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 74-1"
+	archisoRequiredVersion="archiso 75-1"
 	buildFolder=$HOME"/arcolinuxb-build"
 	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
