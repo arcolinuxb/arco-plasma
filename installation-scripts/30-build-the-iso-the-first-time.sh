@@ -38,6 +38,12 @@ echo
 	buildFolder=$HOME"/arcolinuxb-build"
 	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
+
+	# If you want to add packages from the chaotics-aur repo then
+	# change the variable to true and add the package names
+	# that are hosted on chaotics-aur in the packages.x86_64 at the bottom
+
+	chaoticsrepo=false
 	
 	# If you are ready to use your personal repo and personal packages
 	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
@@ -163,6 +169,14 @@ echo
 		cat personal-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	fi
 
+	if [ $chaoticsrepo == true ]; then
+		echo "Adding our chaotics repo to /etc/pacman.conf"
+		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
+		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		cat chaotics-repo | sudo tee -a ../work/archiso/pacman.conf
+		cat chaotics-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+	fi
+
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
@@ -209,7 +223,8 @@ echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
 	echo
-	
+
+	echo
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
 		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
@@ -261,11 +276,11 @@ echo
 	#bios
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/syslinux/archiso_sys-linux.cfg
 	#uefi
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/1-archiso-x86_64-linux.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/2-archiso-x86_64-linux-no-nouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/3-nvidianouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/4-nvidianonouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/5-nomodeset.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/01-archiso-x86_64-linux.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/02-archiso-x86_64-linux-no-nouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/03-nvidianouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/04-nvidianonouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/05-nomodeset.conf
 
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/grub/grub.cfg
 	
@@ -274,6 +289,8 @@ echo
 	echo "Iso build on : "$date_build
 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
 
+	echo "Deleting the first line of /etc/environment"
+	sed -i '1d' $buildFolder/archiso/airootfs/etc/environment
 
 echo
 echo "###########################################################"
