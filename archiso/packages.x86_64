@@ -305,7 +305,7 @@ ttf-ubuntu-font-family
 arc-gtk-theme
 #arc-darkest-theme-git
 kvantum-qt5-git
-#kvantum-qt6-git
+kvantum-qt6-git
 #openbox-arc-git
 
 ###utilities
@@ -338,7 +338,7 @@ gparted
 #gtop
 hardinfo-gtk3
 #hddtemp
-htop
+#htop
 #hunspell
 #hunspell-en_US
 hw-probe
@@ -370,14 +370,14 @@ polkit
 #powertop
 ripgrep
 #rofi
-rxvt-unicode
+#rxvt-unicode
 #simple-scan
 #shotwell
 speedtest-cli-git
 #telegram-desktop
 #timeshift
 tlp
-#tree
+tree
 #ufw
 #gufw
 unace
@@ -470,9 +470,9 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-urxvt-fullscreen
-urxvt-perls
-urxvt-resize-font-git
+#urxvt-fullscreen
+#urxvt-perls
+#urxvt-resize-font-git
 #wttr
 yad
 yakuake
@@ -493,7 +493,7 @@ yay-bin
 arcolinux-alacritty-git
 arcolinux-arc-kde
 arcolinux-bin-git
-#arcolinux-btop-git
+arcolinux-btop-git
 #a-candy-beauty-icon-theme-git
 #arcolinux-common-git
 #arcolinux-conky-collection-git
@@ -932,41 +932,9 @@ arcolinux-sddm-simplicity-git
 #                                ISO SPECIFIC
 ###########################################################################
 
-#plasma-meta
-plasma
-packagekit-qt5
-partitionmanager
-kdeconnect
-systemd-kcm
-ocs-url
-yakuake
-spectacle
-okular
-gwenview
-dolphin-plugins
-kde-gtk-config
-ark
-ffmpegthumbs
-sddm-kcm
-kinit
-audiocd-kio
-#kmix
-
-# Groups
-# https://www.archlinux.org/groups/
-
 #kde-applications-meta
+#kde-development-environment-meta
 #kdeaccessibility-meta
-kde-system-meta
-cryfs
-encfs
-gocryptfs
-kate
-kdenetwork-filesharing
-ksysguard
-#avoid errors in sddm themes
-qt5-virtualkeyboard
-qt5-charts
 #kdebindings
 #kdeedu-meta
 #kdegames-meta
@@ -977,14 +945,41 @@ qt5-charts
 #kdesdk-meta
 #kdeutils-meta
 #kdewebdev-meta
+#kmix
+#plasma-meta
+#plasma-wayland-session
 
-#kde-development-environment-meta
+ark
+ast-firmware
+audiocd-kio
+btop
+cryfs
+dolphin-plugins
+encfs
+ffmpegthumbs
+gocryptfs
+gwenview
+kate
+kde-gtk-config
+kde-system-meta
+kdeconnect
+kdenetwork-filesharing
+kinit
+ksysguard
+mkinitcpio-firmware
+ocs-url
+okular
+packagekit-qt5
+partitionmanager
+plasma
+qt5-charts
+qt5-virtualkeyboard
+sddm-kcm
+spectacle
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
-ast-firmware
-
-##wayland
-#plasma-wayland-session
+systemd-kcm
+yakuake
 
 ## chaotics-aur
 #flat-remix
