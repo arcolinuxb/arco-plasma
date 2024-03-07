@@ -93,7 +93,7 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-#rxvt-unicode-terminfo
+###rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -304,8 +304,8 @@ ttf-ubuntu-font-family
 #adapta-gtk-theme
 arc-gtk-theme
 #arc-darkest-theme-git
-kvantum-qt5-git
-kvantum-qt6-git
+#kvantum-qt5-git
+#kvantum-qt6-git
 #openbox-arc-git
 
 ###utilities
@@ -370,7 +370,7 @@ polkit
 #powertop
 ripgrep
 #rofi
-#rxvt-unicode
+##rxvt-unicode
 #simple-scan
 #shotwell
 speedtest-cli-git
@@ -443,7 +443,7 @@ alacritty
 appstream
 appstream-qt5
 archiso
-conky-lua-archers
+#conky-lua-archers
 downgrade
 #font-manager
 #glxinfo
@@ -470,9 +470,9 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-#urxvt-fullscreen
-#urxvt-perls
-#urxvt-resize-font-git
+##urxvt-fullscreen
+##urxvt-perls
+##urxvt-resize-font-git
 #wttr
 yad
 yakuake
@@ -497,7 +497,7 @@ arcolinux-btop-git
 #a-candy-beauty-icon-theme-git
 #arcolinux-common-git
 #arcolinux-conky-collection-git
-arcolinux-conky-collection-plasma-git
+#arcolinux-conky-collection-plasma-git
 #arcolinux-cron-git
 #arcolinux-docs-git
 arcolinux-desktop-trasher-git
@@ -509,12 +509,12 @@ arcolinux-grub-theme-vimix-git
 #arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-arc-git
 #arcolinux-gtk3-surfn-arc-breeze-git
-arcolinux-gtk3-surfn-plasma-dark-git
+#arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
 #arcolinux-hyprland-profile-git
 arcolinux-keyring
-arcolinux-kvantum-git
+#arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
 #arcolinux-kvantum-plasma-git
 #arcolinux-local-applications-git
@@ -536,13 +536,13 @@ arcolinux-neofetch-git
 #arcolinux-obmenu-generator-xtended-git
 #arcolinux-openbox-themes-git
 arcolinux-paru-git
-arcolinux-pipemenus-git
+#arcolinux-pipemenus-git
 #arcolinux-plank-git
 #arcolinux-plank-themes-git
-arcolinux-plasma-kservices-git
+#arcolinux-plasma-kservices-git
 #arcolinux-polybar-git
 #arcolinux-qt5-git
-arcolinux-qt5-plasma-git
+#arcolinux-qt5-plasma-git
 #arcolinux-rofi-git
 #arcolinux-rofi-themes-git
 arcolinux-root-git
@@ -604,7 +604,7 @@ arcolinux-zsh-git
 #arcolinux-openbox-git
 #arcolinux-openboxb-git
 #arcolinux-openbox-xtended-git
-arcolinux-plasma-git
+#arcolinux-plasma-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
 #arcolinux-river-git
@@ -647,7 +647,7 @@ arcolinux-plasma-git
 #arcolinux-config-lxqt-git
 #arcolinux-config-openbox-git
 #arcolinux-config-mate-git
-arcolinux-config-plasma-git
+#arcolinux-config-plasma-git
 #arcolinux-config-plasma-nemesis-git
 #arcolinux-config-qtile-git
 #arcolinux-config-spectrwm-git
@@ -700,12 +700,12 @@ arcolinux-dconf-all-desktops-git
 #                                ARCOLINUX CALAMARES
 ###########################################################################
 
-arco-calamares
+#arco-calamares
 #arco-calamares-comp
 #arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
-#arco-calamares-wayland
+arco-calamares-wayland
 arcolinux-system-installation-git
 #arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
@@ -731,7 +731,7 @@ kpmcore
 boost-libs
 libpwquality
 squashfs-tools
-plasma-framework5
+#plasma-framework5
 hwinfo
 qt5-xmlpatterns
 adobe-source-han-sans-jp-fonts
@@ -965,20 +965,20 @@ kde-system-meta
 kdeconnect
 kdenetwork-filesharing
 kinit
-ksysguard
+#ksysguard
 mkinitcpio-firmware
 ocs-url
 okular
-packagekit-qt5
+packagekit-qt6
 partitionmanager
 plasma
-qt5-charts
-qt5-virtualkeyboard
-sddm-kcm
+#qt6-charts
+#qt6-virtualkeyboard
+#sddm-kcm
 spectacle
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
-systemd-kcm
+#systemd-kcm
 yakuake
 
 ## chaotics-aur
