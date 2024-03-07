@@ -58,7 +58,7 @@ lvm2
 #lynx
 man-db
 man-pages
-mc
+#mc
 mdadm
 memtest86+
 memtest86+-efi
@@ -112,7 +112,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
+#vim
 #virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
@@ -268,7 +268,7 @@ imagemagick
 numlockx
 #pragha
 #qbittorrent
-scrot
+#scrot
 #simplescreenrecorder
 #termite
 variety
@@ -283,7 +283,7 @@ jq
 
 ###fonts
 adobe-source-sans-fonts
-awesome-terminal-fonts
+#awesome-terminal-fonts
 noto-fonts
 #ttf-bitstream-vera
 ttf-dejavu
@@ -309,15 +309,15 @@ arc-gtk-theme
 #openbox-arc-git
 
 ###utilities
-arandr
-asciinema
+#arandr
+#asciinema
 bash-completion
 #baobab
 bat
 #catfish
 #cronie
-dconf-editor
-#dex
+#dconf-editor
+dex
 #discord
 duf
 edid-decode-git
@@ -370,13 +370,13 @@ polkit
 #powertop
 ripgrep
 #rofi
-##rxvt-unicode
+#rxvt-unicode
 #simple-scan
 #shotwell
-speedtest-cli-git
+#speedtest-cli-git
 #telegram-desktop
 #timeshift
-tlp
+#tlp
 tree
 #ufw
 #gufw
@@ -393,7 +393,7 @@ xapp
 #xdg-desktop-portal-gtk
 #yt-dlp
 #youtube-dl
-zenity
+#zenity
 zsh
 zsh-completions
 zsh-syntax-highlighting
@@ -448,7 +448,7 @@ downgrade
 #font-manager
 #glxinfo
 #gitahead-bin
-grub-customizer
+#grub-customizer
 hardcode-fixer-git
 inxi
 mintstick-git
@@ -470,11 +470,11 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-##urxvt-fullscreen
-##urxvt-perls
-##urxvt-resize-font-git
+#urxvt-fullscreen
+#urxvt-perls
+#urxvt-resize-font-git
 #wttr
-yad
+#yad
 yakuake
 yay-bin
 
@@ -976,6 +976,7 @@ plasma
 #qt6-charts
 #qt6-virtualkeyboard
 #sddm-kcm
+sofirem
 spectacle
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
