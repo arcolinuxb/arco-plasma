@@ -292,6 +292,9 @@ echo
 	echo "Deleting the first line of /etc/environment"
 	sed -i '1d' $buildFolder/archiso/airootfs/etc/environment
 
+	echo "Deleting the first line of /etc/environment"
+	sed -i '1d' $buildFolder/archiso/airootfs/etc/environment
+
 #echo
 #echo "################################################################## "
 #tput setaf 2

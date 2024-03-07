@@ -439,10 +439,10 @@ ttf-ms-fonts
 mkinitcpio-openswap
 
 ###utilities-repo
-alacritty
+#alacritty
 appstream
-appstream-qt5
-archiso
+#appstream-qt5
+#archiso
 #conky-lua-archers
 downgrade
 #font-manager
@@ -457,7 +457,7 @@ neofetch
 #arcolinux-pamac-all
 #octopi
 #octopi-notifier-qt5
-pamac-aur
+#pamac-aur
 paru-bin
 #peek
 #pulseaudio-equalizer-ladspa
@@ -490,7 +490,7 @@ yay-bin
 #                           ARCOLINUX FOLDER
 ###########################################################################
 
-arcolinux-alacritty-git
+#arcolinux-alacritty-git
 arcolinux-arc-kde
 arcolinux-bin-git
 arcolinux-btop-git
@@ -511,14 +511,14 @@ arcolinux-grub-theme-vimix-git
 #arcolinux-gtk3-surfn-arc-breeze-git
 #arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
-arcolinux-hblock-git
+#arcolinux-hblock-git
 #arcolinux-hyprland-profile-git
 arcolinux-keyring
 #arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
 #arcolinux-kvantum-plasma-git
 #arcolinux-local-applications-git
-arcolinux-local-applications-all-hide-git
+#arcolinux-local-applications-all-hide-git
 #arcolinux-local-applications-plasma-hide-git
 #arcolinux-local-xfce4-git
 #arcolinux-logo-git
@@ -705,7 +705,7 @@ arcolinux-dconf-all-desktops-git
 #arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
-arco-calamares-wayland
+#arco-calamares-wayland
 arcolinux-system-installation-git
 #arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
@@ -949,6 +949,7 @@ arcolinux-sddm-simplicity-git
 #plasma-meta
 #plasma-wayland-session
 
+arco-calamares-plasma
 ark
 ast-firmware
 audiocd-kio
