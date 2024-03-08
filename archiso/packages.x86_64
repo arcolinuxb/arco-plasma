@@ -715,7 +715,7 @@ arcolinux-welcome-app-git
 #arcolinux-welcome-app-deepin-git
 
 ###########################################################################
-#                                CALAMARES DEPENDENCIES
+#                                CALAMARES DEPENDENCIES IN PGKBUILD 
 ###########################################################################
 
 #ckbcomp
@@ -932,6 +932,8 @@ arcolinux-sddm-simplicity-git
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+##arcolinux-apps
+sofirem-git
 
 #kde-applications-meta
 #kde-development-environment-meta
@@ -973,7 +975,6 @@ okular
 packagekit-qt6
 partitionmanager
 plasma
-sofirem-git
 spectacle
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
@@ -982,3 +983,4 @@ yakuake
 
 ## chaotics-aur
 #flat-remix
+#colloid-cursors-git
