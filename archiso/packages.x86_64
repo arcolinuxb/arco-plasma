@@ -112,7 +112,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-#vim
+vim
 #virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
@@ -248,7 +248,7 @@ poppler-qt5
 #deadbeef
 #dmenu
 #evolution
-feh
+#feh
 firefox
 #flashplugin
 #galculator
@@ -257,7 +257,7 @@ firefox
 #gmrun
 #gsimplecal
 #guvcview
-imagemagick
+#imagemagick
 #inkscape
 #libreoffice-fresh
 #lollypop
@@ -265,7 +265,7 @@ imagemagick
 #meld
 #micro
 #nitrogen
-numlockx
+#numlockx
 #pragha
 #qbittorrent
 #scrot
@@ -275,7 +275,7 @@ variety
 #vlc
 
 ###conky
-jq
+#jq
 #lm_sensors
 
 ###cursors
@@ -317,7 +317,7 @@ bat
 #catfish
 #cronie
 #dconf-editor
-dex
+#dex
 #discord
 duf
 edid-decode-git
@@ -326,7 +326,7 @@ expac
 file-roller
 #filezilla
 git
-gksu
+#gksu
 #glances
 #gnome-disk-utility
 #gnome-keyring
@@ -357,7 +357,7 @@ oh-my-zsh-git
 p7zip
 pkgfile
 #plank
-playerctl
+#playerctl
 polkit
 #polkit-gnome
 #python2-dbus
@@ -384,10 +384,10 @@ unace
 unrar
 unzip
 #vnstat
-w3m
-webkit2gtk
-wmctrl
-xapp
+#w3m
+#webkit2gtk
+#wmctrl
+#xapp
 #xdo
 #xdotool
 #xdg-desktop-portal-gtk
@@ -718,22 +718,23 @@ arcolinux-welcome-app-git
 #                                CALAMARES DEPENDENCIES
 ###########################################################################
 
-ckbcomp
-xkeyboard-config
-upower
-kcoreaddons5
-kconfig5
-ki18n5
-kservice5
-kwidgetsaddons5
-kpmcore
+#ckbcomp
+#xkeyboard-config
+#upower
+#kcoreaddons5
+#kconfig5
+#ki18n5
+#kservice5
+#kwidgetsaddons5
+#kpmcore
 #arcolinux-kpmcore
-boost-libs
-libpwquality
-squashfs-tools
+#boost-libs
+#libpwquality
+#squashfs-tools
 #plasma-framework5
-hwinfo
-qt5-xmlpatterns
+#hwinfo
+#qt5-xmlpatterns
+
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
@@ -966,17 +967,13 @@ kde-system-meta
 kdeconnect
 kdenetwork-filesharing
 kinit
-#ksysguard
 mkinitcpio-firmware
 ocs-url
 okular
 packagekit-qt6
 partitionmanager
 plasma
-#qt6-charts
-#qt6-virtualkeyboard
-#sddm-kcm
-sofirem
+sofirem-git
 spectacle
 surfn-plasma-dark-icons-git
 surfn-plasma-dark-tela-icons-git
