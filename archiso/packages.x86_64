@@ -977,7 +977,7 @@ partitionmanager
 plasma
 spectacle
 surfn-plasma-dark-icons-git
-surfn-plasma-dark-tela-icons-git
+#surfn-plasma-dark-tela-icons-git
 #systemd-kcm
 yakuake
 
