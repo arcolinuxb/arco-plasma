@@ -58,7 +58,6 @@ lvm2
 #lynx
 man-db
 man-pages
-#mc
 mdadm
 memtest86+
 memtest86+-efi
@@ -493,6 +492,7 @@ yay-bin
 #arcolinux-alacritty-git
 arcolinux-arc-kde
 arcolinux-bin-git
+arcolinux-bootloader-grub-git
 arcolinux-btop-git
 #a-candy-beauty-icon-theme-git
 #arcolinux-common-git
@@ -734,7 +734,6 @@ arcolinux-welcome-app-git
 #plasma-framework5
 #hwinfo
 #qt5-xmlpatterns
-
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
