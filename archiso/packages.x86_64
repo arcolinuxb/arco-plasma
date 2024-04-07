@@ -705,7 +705,7 @@ arcolinux-dconf-all-desktops-git
 #arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
-#arco-calamares-wayland
+arco-calamares-wayland
 arcolinux-system-installation-git
 #arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
@@ -952,7 +952,7 @@ sofirem-git
 #plasma-meta
 #plasma-wayland-session
 
-arco-calamares-plasma
+#arco-calamares-plasma
 ark
 ast-firmware
 audiocd-kio
